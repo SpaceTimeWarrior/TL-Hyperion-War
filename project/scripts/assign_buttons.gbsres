@@ -1,0 +1,87 @@
+{
+  "_resourceType": "script",
+  "id": "520dafcf-5e16-411c-849a-d8095b920852",
+  "name": "assign buttons",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "2"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "args": {
+                    "__presetId": "47ec8bb6-a7b5-42e7-8d76-0884986d7450",
+                    "__section": "source",
+                    "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+                    "spriteStateId": "",
+                    "actorId": "$self$",
+                    "x": 0,
+                    "y": 8,
+                    "directionType": "direction",
+                    "otherActorId": "$self$",
+                    "direction": "right",
+                    "angle": 0,
+                    "angleVariable": "L0",
+                    "targetActorId": "$self$",
+                    "initialOffset": 0,
+                    "speed": 4,
+                    "animSpeed": 31,
+                    "lifeTime": 1,
+                    "loopAnim": true,
+                    "destroyOnHit": true,
+                    "collisionGroup": "3",
+                    "collisionMask": [
+                      "1"
+                    ],
+                    "__collapse": false
+                  },
+                  "id": "ee3a0097-696d-4ab6-9ce7-f65cfdf4e805"
+                },
+                {
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "2"
+                  },
+                  "id": "d8abb124-c4b9-4250-94f0-149c87ba4534"
+                }
+              ],
+              "false": []
+            },
+            "id": "4ef5d1f3-a17e-4408-b769-1556cc3b3588"
+          }
+        ]
+      },
+      "id": "b79529f0-5dfd-455a-b9fd-ed2dd2c1c980"
+    }
+  ]
+}

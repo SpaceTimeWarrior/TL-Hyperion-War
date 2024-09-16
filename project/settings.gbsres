@@ -1,0 +1,124 @@
+{
+  "_resourceType": "settings",
+  "startSceneId": "cd946839-d2e7-4bea-9b4a-5536a48532bd",
+  "startX": 4,
+  "startY": 9,
+  "startMoveSpeed": 1,
+  "startAnimSpeed": 15,
+  "startDirection": "up",
+  "showCollisionExtraTiles": false,
+  "sgbEnabled": false,
+  "customHead": "",
+  "defaultBackgroundPaletteIds": [
+    "default-bg-1",
+    "default-bg-2",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-6",
+    "default-bg-6",
+    "dmg",
+    "default-ui"
+  ],
+  "defaultSpritePaletteIds": [
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "defaultSpritePaletteId": "default-sprite",
+  "defaultUIPaletteId": "default-ui",
+  "playerPaletteId": "",
+  "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
+  "defaultCharacterEncoding": "",
+  "defaultPlayerSprites": {
+    "TOPDOWN": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+    "PLATFORM": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+    "ADVENTURE": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+    "SHMUP": "9492cc9e-1634-4a97-963b-62a6f67ea7ee",
+    "POINTNCLICK": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+    "LOGO": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3"
+  },
+  "musicDriver": "huge",
+  "cartType": "mbc5",
+  "batterylessEnabled": false,
+  "customColorsWhite": "E8F8E0",
+  "customColorsLight": "B0F088",
+  "customColorsDark": "509878",
+  "customColorsBlack": "202850",
+  "customControlsUp": [
+    "ArrowUp",
+    "w"
+  ],
+  "customControlsDown": [
+    "ArrowDown",
+    "s"
+  ],
+  "customControlsLeft": [
+    "ArrowLeft",
+    "a"
+  ],
+  "customControlsRight": [
+    "ArrowRight",
+    "d"
+  ],
+  "customControlsA": [
+    "Alt",
+    "z",
+    "j"
+  ],
+  "customControlsB": [
+    "Control",
+    "k",
+    "x"
+  ],
+  "customControlsStart": [
+    "Enter"
+  ],
+  "customControlsSelect": [
+    "Shift"
+  ],
+  "colorMode": "mixed",
+  "generateDebugFilesEnabled": true,
+  "compilerPreset": 3000,
+  "scriptEventPresets": {
+    "EVENT_LAUNCH_PROJECTILE": {
+      "47ec8bb6-a7b5-42e7-8d76-0884986d7450": {
+        "id": "47ec8bb6-a7b5-42e7-8d76-0884986d7450",
+        "name": "main projectile",
+        "groups": [
+          "projectile",
+          "source",
+          "direction"
+        ],
+        "args": {
+          "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+          "spriteStateId": "",
+          "speed": 2,
+          "animSpeed": 15,
+          "lifeTime": 1,
+          "loopAnim": true,
+          "destroyOnHit": true,
+          "collisionGroup": "3",
+          "collisionMask": [
+            "1"
+          ],
+          "actorId": "$self$",
+          "x": 0,
+          "y": 0,
+          "directionType": "direction",
+          "otherActorId": "$self$",
+          "direction": "right",
+          "angle": 0,
+          "angleVariable": "L0",
+          "targetActorId": "$self$",
+          "initialOffset": 0
+        }
+      }
+    }
+  },
+  "scriptEventDefaultPresets": {}
+}

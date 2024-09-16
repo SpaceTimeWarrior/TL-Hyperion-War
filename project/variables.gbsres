@@ -1,0 +1,45 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Player HP",
+      "symbol": "var_player_hp"
+    },
+    {
+      "id": "1",
+      "name": "Player boost",
+      "symbol": "var_player_boost"
+    },
+    {
+      "id": "2",
+      "name": "Player projectiles",
+      "symbol": "var_player_projectiles"
+    },
+    {
+      "id": "3",
+      "name": "game Volume",
+      "symbol": "var_game_volume"
+    },
+    {
+      "id": "4",
+      "name": "Max projectiles",
+      "symbol": "var_max_projectiles"
+    },
+    {
+      "id": "5",
+      "name": "projectile counter",
+      "symbol": "var_projectile_counter"
+    },
+    {
+      "id": "6",
+      "name": "score",
+      "symbol": "var_score"
+    },
+    {
+      "id": "4f8924a2-6f49-4c99-8471-c476f9b7a2bb__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
+    }
+  ]
+}
