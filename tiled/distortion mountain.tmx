@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="10" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" source="../../../tl-lightsadv/ground tlst0.tsx"/>
+ <tileset firstgid="73" source="../../../tl-lightsadv/trees.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="10" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+14,14,49,0,50,0,51,14,0,14,
+14,0,0,0,0,0,0,0,0,0,
+14,14,49,0,50,0,51,14,0,14,
+14,0,0,0,0,0,0,0,0,14,
+14,14,49,0,50,0,51,14,0,14,
+0,0,0,0,0,0,0,0,0,0,
+14,14,49,0,50,0,51,14,0,14
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="10" height="9">
+  <data encoding="csv">
+84,84,85,0,0,0,0,83,84,84,
+93,93,94,0,0,0,0,92,93,93,
+84,84,85,0,0,0,0,83,84,84,
+93,93,94,0,0,0,0,92,93,93,
+84,84,85,0,0,0,0,83,84,84,
+93,93,94,0,0,0,0,92,93,93,
+84,84,85,0,0,0,0,83,84,84,
+93,93,94,0,0,0,0,92,93,93,
+102,102,0,0,0,0,0,0,102,102
+</data>
+ </layer>
+</map>

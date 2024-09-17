@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "a2af11e9-e36d-4e17-b4ee-4dd2233b7aa3",
+  "name": "black screen",
+  "symbol": "bg_white_screen_copy_0",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "black screen.png",
+  "tileColors": ""
+}

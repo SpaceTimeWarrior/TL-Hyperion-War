@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "e60ad29e-5369-4c38-a8a7-03848b029596",
+  "name": "ltgrey screen",
+  "symbol": "bg_white_screen_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "ltgrey screen.png",
+  "tileColors": ""
+}

@@ -12,8 +12,8 @@
     {
       "id": "6f9780c8-be56-49e4-ba00-221a807889b9",
       "name": "",
-      "animationType": "fixed",
-      "flipLeft": false,
+      "animationType": "multi",
+      "flipLeft": true,
       "animations": [
         {
           "id": "4ad77762-b16e-4848-a9ea-90ab562984ce",
@@ -157,8 +157,35 @@
           "id": "b1813c8b-4484-414e-ad18-70fb6120204d",
           "frames": [
             {
-              "id": "e2499115-189e-4eec-b7d3-553f18c561b9",
-              "tiles": []
+              "id": "11422728-7c2d-4ad1-b48d-7e304b2ed2b2",
+              "tiles": [
+                {
+                  "id": "98c83ceb-0535-4699-82d5-e2f363ba9de9",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 1,
+                  "priority": false
+                },
+                {
+                  "id": "628731b7-0b5c-4e9d-97ab-c8e58dca29c8",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 1,
+                  "priority": false
+                }
+              ]
             }
           ]
         },
@@ -166,8 +193,35 @@
           "id": "78f324b3-bcc5-4e7b-bf6b-4e0633275e4d",
           "frames": [
             {
-              "id": "aac7f495-832b-4bd6-899e-3598abe01831",
-              "tiles": []
+              "id": "df35b212-5adb-4db6-967e-4856a1a9ab67",
+              "tiles": [
+                {
+                  "id": "0f2c8b73-5592-4d4e-9e1c-f545310d0899",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 1,
+                  "priority": false
+                },
+                {
+                  "id": "78dbbfc0-d4b0-4866-b8e2-52c18a3af768",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 1,
+                  "priority": false
+                }
+              ]
             }
           ]
         },

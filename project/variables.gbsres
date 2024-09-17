@@ -4,7 +4,7 @@
     {
       "id": "0",
       "name": "Player HP",
-      "symbol": "var_player_hp"
+      "symbol": "var_player_hp_0"
     },
     {
       "id": "1",
@@ -40,6 +40,41 @@
       "id": "4f8924a2-6f49-4c99-8471-c476f9b7a2bb__L0",
       "name": "Local 0",
       "symbol": "var_local_1"
+    },
+    {
+      "id": "7",
+      "name": "e-ship activate",
+      "symbol": "var_e_ship_activate"
+    },
+    {
+      "id": "8",
+      "name": "Boss HP",
+      "symbol": "var_boss_hp"
+    },
+    {
+      "id": "9",
+      "name": "last_hp",
+      "symbol": "var_last_hp"
+    },
+    {
+      "id": "10",
+      "name": "last_boost",
+      "symbol": "var_last_boost"
+    },
+    {
+      "id": "11",
+      "name": "last_ammo",
+      "symbol": "var_last_ammo"
+    },
+    {
+      "id": "12",
+      "name": "last score",
+      "symbol": "var_last_score"
+    },
+    {
+      "id": "5aca0ece-8fec-4844-a54e-392ceae87191__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
     }
   ]
 }

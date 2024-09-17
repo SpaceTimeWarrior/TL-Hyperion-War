@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "0e6e0773-f38f-4224-a2fa-41163983eca5",
+  "name": "white screen",
+  "symbol": "bg_placeholder_copy",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "white screen.png",
+  "tileColors": ""
+}
