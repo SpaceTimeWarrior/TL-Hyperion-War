@@ -1,0 +1,247 @@
+{
+  "_resourceType": "actor",
+  "id": "c0cf6410-39a0-4b6f-85ba-665b22497770",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b6a4f281-0277-48a4-8f73-58cacee67e83",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_26",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 60
+        }
+      },
+      "id": "0a421fbe-23a4-4d5a-8ca2-92369778a8c1"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "5e7245a1-14ea-4e88-aeda-55095301ca76"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "8"
+      },
+      "id": "b315a160-2fc7-4a96-99da-582b78cc28f3"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6",
+        "__collapse": false
+      },
+      "id": "dae0036a-1868-41cf-87e5-e0f2944ad765"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\nyou beat the boss"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4f50903b-4148-482c-846e-792def018a1b"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1786feb8-249b-49bc-8e90-5c28d1be638b"
+          }
+        ],
+        "false": []
+      },
+      "id": "8cd8f9a9-1cef-41cf-bc58-5c7a74322869"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "8"
+      },
+      "id": "c22d1885-a923-4d39-8485-47d91a4932b9"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "008484b5-300c-46a5-8a11-05fe5c942fc7"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6",
+        "__collapse": false
+      },
+      "id": "0faaf4f1-b8fb-4738-9f6a-b2cca250da51"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\nyou beat the boss"
+              ],
+              "__section": "presets",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "00e97021-b776-40d9-92e9-c114a4479c79"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f9ee25be-248f-45c6-ba28-778aca6ff6f4",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "205155fe-ad04-44fe-9584-149b6833a111"
+          },
+          {
+            "command": "EVENT_AWAIT_INPUT",
+            "args": {
+              "input": [
+                "a",
+                "b",
+                "left",
+                "up",
+                "down",
+                "right",
+                "start",
+                "select"
+              ]
+            },
+            "id": "e848bb04-a814-4f93-bd4c-a80369c4b1dd"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "acc81512-a1c0-4f83-b52f-f2bade545d19"
+          }
+        ],
+        "false": []
+      },
+      "id": "a8eb34a9-ab53-4441-b10d-79595b5b462c"
+    }
+  ],
+  "x": 252,
+  "y": 9,
+  "_index": 0
+}

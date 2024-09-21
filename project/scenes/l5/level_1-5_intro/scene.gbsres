@@ -1,0 +1,163 @@
+{
+  "_resourceType": "scene",
+  "id": "6fe5925f-a599-4e89-934d-e476ae320c81",
+  "_index": 14,
+  "name": "L5/level 1-5 intro",
+  "backgroundId": "69302fd2-c9b9-418e-a5e3-ddadd1e07ac8",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "da9b688a-cb2c-41c1-8426-7ce7e65e3418",
+    "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+  ],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_15",
+  "x": 224,
+  "y": 1104,
+  "script": [
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "d97f7cbe-06fb-49b1-a543-0927412f64cf"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:mom is\nthat you"
+        ],
+        "__section": "behavior",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 1,
+        "closeDelayFrames": 30
+      },
+      "id": "2dd2bc15-abc8-4135-8474-667bffff6a03"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "kit: yes I have \nsince put the \nshrine on hold.",
+          "after your \nfather in law \nhad made Eather ",
+          "a independent \nplanet a group \nthat is well ",
+          "known for \nhating monsters \nhave started ",
+          "genocide. the \nonly reason why \nI am immune is ",
+          "because I am an \nambassador\nbut after I let ",
+          "you go you have \nto get to Eather",
+          "did your father \nin law make...\noh my."
+        ],
+        "__section": "text",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 1,
+        "closeDelayFrames": 30
+      },
+      "id": "d2f40ff9-2c0e-4bf3-a673-e6e603c30f85"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:no he \ndidn't..."
+        ],
+        "__section": "text",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 1,
+        "closeDelayFrames": 30
+      },
+      "id": "f4d513bc-160d-455e-8d54-f9a38d6751ca"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "kit:... ... get \ngoing. I still\nhave a few",
+          "things I got to\ndo otherwise it\nwould look",
+          "very suspicious.\ngood luck"
+        ],
+        "__section": "text",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "03b555f6-a419-49cb-9625-af18f2e6106b"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "67a58610-883d-4254-9394-3f9befd701b5",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "8afb7630-397e-4652-9dad-60bd12d10f7e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

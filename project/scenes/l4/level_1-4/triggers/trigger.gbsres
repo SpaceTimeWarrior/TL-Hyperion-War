@@ -1,0 +1,159 @@
+{
+  "_resourceType": "trigger",
+  "id": "442446d2-8cee-4635-8bc4-a2f49c06ac07",
+  "name": "",
+  "prefabId": "",
+  "x": 238,
+  "y": 3,
+  "symbol": "trigger_23",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 10,
+  "script": [
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "fe7d34da-5c7b-4f1a-bc91-ff55eef355a6"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+      },
+      "id": "451a3a14-dcb5-4773-b065-92cb84332b9d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair: crap I am\ntrapped!... wait\nis that ship",
+          "attached to the\nrailing... maybe\nif I destroy it",
+          "I will gain \naccess."
+        ],
+        "__section": "text",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "fce0b942-d868-4422-b86c-a3f519b3f22a"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "black",
+              "x": 0,
+              "y": 16
+            },
+            "id": "3d6a3eb8-569a-4ebc-8975-56d617904d5a"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 2, 0, 16"
+            },
+            "id": "5d698182-8f4d-4702-be71-1f16501c6286"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "bc4ebbdd-314c-40fe-9dff-a19d9724d9ec",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 16
+              },
+              "__collapse": false,
+              "$variable[V3]$": {
+                "type": "true"
+              }
+            },
+            "id": "f17072eb-9f16-4db4-952a-9d40911c5f4b"
+          }
+        ]
+      },
+      "id": "47a6ae66-11bb-4fb4-a779-f1ca40594eec"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 2,
+        "duration": 0.75,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "__collapse": false
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "664e4d16-6962-4217-86d7-cd6862148c0f"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+              "spriteStateId": "",
+              "actorId": "25a66eee-0ad3-4d9d-8e9d-90b5584df643",
+              "x": 0,
+              "y": 8,
+              "directionType": "target",
+              "otherActorId": "$self$",
+              "direction": "left",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "player",
+              "initialOffset": 0,
+              "speed": 1,
+              "animSpeed": 15,
+              "lifeTime": 3,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "455e9212-0e79-4a14-8f7a-22911e5fdbbe"
+          }
+        ]
+      },
+      "id": "87bb76ec-c0c6-49a7-a6ad-142c6625e694"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "a3b738dd-dfaa-44c1-b664-7e55ac0ba3a3",
+  "name": "damage.wav",
+  "symbol": "sound_damage_wav",
+  "filename": "damage.wav",
+  "type": "wav"
+}

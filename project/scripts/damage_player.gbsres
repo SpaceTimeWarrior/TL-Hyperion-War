@@ -8,6 +8,19 @@
   "symbol": "script_3",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "a3b738dd-dfaa-44c1-b664-7e55ac0ba3a3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "5facd28e-0792-4a35-aa87-755d9b72cbf5"
+    },
+    {
       "command": "EVENT_CAMERA_SHAKE",
       "args": {
         "time": 0.2,
@@ -80,6 +93,23 @@
               "closeDelayFrames": 30
             },
             "id": "a30d71e8-41ec-472b-9d22-e7ed2941c023"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "6c63f8cb-bd2a-4d82-8a8a-b9f4f9156c80"
           }
         ],
         "false": []

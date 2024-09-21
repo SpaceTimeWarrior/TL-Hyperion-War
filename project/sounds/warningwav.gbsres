@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "374a3344-3195-4a91-8f6b-3625ed55012b",
+  "name": "warning.wav",
+  "symbol": "sound_warning_wav",
+  "filename": "warning.wav",
+  "type": "wav"
+}

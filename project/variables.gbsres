@@ -37,11 +37,6 @@
       "symbol": "var_score"
     },
     {
-      "id": "4f8924a2-6f49-4c99-8471-c476f9b7a2bb__L0",
-      "name": "Local 0",
-      "symbol": "var_local_1"
-    },
-    {
       "id": "7",
       "name": "e-ship activate",
       "symbol": "var_e_ship_activate"
@@ -70,6 +65,26 @@
       "id": "12",
       "name": "last score",
       "symbol": "var_last_score"
+    },
+    {
+      "id": "13",
+      "name": "temp counter 1",
+      "symbol": "var_temp_counter_0"
+    },
+    {
+      "id": "14",
+      "name": "temp counter 2",
+      "symbol": "var_temp_counter_1"
+    },
+    {
+      "id": "15",
+      "name": "temp counter 3",
+      "symbol": "var_temp_counter_3"
+    },
+    {
+      "id": "4f8924a2-6f49-4c99-8471-c476f9b7a2bb__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
     },
     {
       "id": "5aca0ece-8fec-4844-a54e-392ceae87191__L0",

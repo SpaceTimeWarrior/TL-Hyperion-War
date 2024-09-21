@@ -38,6 +38,19 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "38d0ef3d-c664-4a13-b339-478d79600512"
+                },
+                {
                   "command": "EVENT_LAUNCH_PROJECTILE",
                   "args": {
                     "__presetId": "47ec8bb6-a7b5-42e7-8d76-0884986d7450",

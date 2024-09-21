@@ -1,0 +1,140 @@
+{
+  "_resourceType": "scene",
+  "id": "33943cf7-9260-4a25-a04c-52c732a959e8",
+  "_index": 8,
+  "name": "L3/level1-3 intro",
+  "backgroundId": "8d27951f-a9e6-4c53-8c4a-abbf594a46b2",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "1b759232-0f57-4300-8203-91f24e570817"
+  ],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_9",
+  "x": 200,
+  "y": 744,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "52e7325c-f338-4bc1-9a06-6b2adfdd0b66"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-4"
+      },
+      "id": "09612408-64b4-4d91-a26e-a727b2cddee9"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 390,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "88d0e1f8-f847-4f86-a7e0-65857c4829e9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: we had a \ndefense grid?"
+        ],
+        "__section": "text",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "14e35d21-8cfc-4e33-8218-695ad52e3063"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+      },
+      "id": "c0fe6a57-2ac6-422f-82b2-453dfe62931e"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "0e50fac2-8c68-46f4-8127-69d00f919045"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:apparently\nthe solar \ncouncil removed",
+          "them due to \nsafety reasons.\nI can see why",
+          "but I think if\nthat is the case\nthey should of",
+          "put something in\nplace to prevent\nattacks.",
+          "well on to the\nstory"
+        ],
+        "__section": "layout",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "80eb22a0-2963-481e-88cb-a5ae321212e9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2c958a47-878b-4f5c-afa1-bc123a288ddf",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "da0613ad-6e00-49ca-9e92-e7e16a2d4e84"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

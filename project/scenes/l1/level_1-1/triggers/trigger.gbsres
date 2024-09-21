@@ -1,0 +1,121 @@
+{
+  "_resourceType": "trigger",
+  "id": "b5601e75-a783-4241-be40-a052917feba3",
+  "name": "",
+  "prefabId": "",
+  "x": 137,
+  "y": 0,
+  "symbol": "trigger_2",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 15,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 15
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "blair: we missed\ntoo many rings\nwe will do \nanother lap."
+              ],
+              "__section": "text",
+              "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "top",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "text",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "6d8c8557-8cc1-487a-9079-688dd7c9591b"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_OVERLAY_SHOW",
+                  "args": {
+                    "color": "black",
+                    "x": 0,
+                    "y": 16
+                  },
+                  "id": "bb85971d-7632-4540-9254-239e23081e95"
+                },
+                {
+                  "command": "EVENT_GBVM_SCRIPT",
+                  "args": {
+                    "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 2, 0, 16"
+                  },
+                  "id": "526df451-e0a2-4829-b98c-3bfd49691fda"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "bc4ebbdd-314c-40fe-9dff-a19d9724d9ec",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "__collapse": false,
+                    "$variable[V3]$": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "69e1ce1b-7282-4e1e-b82d-81a89382e4fe"
+                }
+              ]
+            },
+            "id": "c1203c80-8b27-4440-8487-601a9859d54f"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              }
+            },
+            "id": "0991fb0a-a67d-4d11-ae14-aad85ff94c07"
+          }
+        ],
+        "false": []
+      },
+      "id": "13c3b04f-b4cf-43f8-b55c-561209b70462"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

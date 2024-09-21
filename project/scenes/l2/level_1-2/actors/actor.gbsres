@@ -1,0 +1,245 @@
+{
+  "_resourceType": "actor",
+  "id": "2d92c4e1-4dfa-445c-b0ff-fda1760c0962",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b6a4f281-0277-48a4-8f73-58cacee67e83",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_20",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 40
+        }
+      },
+      "id": "0424ba8c-20e2-4311-b280-d743899899e5"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "553e8b5a-8bba-45a3-92a5-014a669dcfd6"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "8"
+      },
+      "id": "297d82e9-8138-4f8c-9194-92d523e1b38b"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6",
+        "__collapse": false
+      },
+      "id": "692fd132-653b-49cb-bf6d-63b7f12b2c41"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\nyou beat the boss"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "6b19b3b7-6062-4cef-9c1d-33328237ea77"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ca60ef4c-e0ee-4298-8c54-afe803dee3a1"
+          }
+        ],
+        "false": []
+      },
+      "id": "f51d4dce-f0e2-4b8a-b9a4-b93c52ae4078"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "8"
+      },
+      "id": "0f7a61d0-5ea3-478e-a77c-5538164e0afc"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+        "pitch": 4,
+        "frequency": 300,
+        "duration": 0.05,
+        "effect": 0
+      },
+      "id": "a9ca08c2-f309-43ef-8e05-fce9abcb0642"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6",
+        "__collapse": false
+      },
+      "id": "4cf12fe1-dd3a-44c8-9fb0-fe109cced1f1"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\nyou beat the boss"
+              ],
+              "__section": "presets",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "f78d27cf-ad2a-4d22-a1a5-4266300069f1"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "0e157b4c-359f-4e80-85ed-cdcadddc782a",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "2ff09c69-5d00-4c86-b6e3-ed38f7a7f543"
+          },
+          {
+            "command": "EVENT_AWAIT_INPUT",
+            "args": {
+              "input": [
+                "a",
+                "b",
+                "left",
+                "up",
+                "down",
+                "right",
+                "start",
+                "select"
+              ]
+            },
+            "id": "49765a7c-668f-4b1d-8482-915ff48bff9f"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b030c3b1-c4ea-4df1-841d-cf0d83f79960"
+          }
+        ],
+        "false": []
+      },
+      "id": "edc91834-639c-495e-98e0-158e557fae5f"
+    }
+  ],
+  "x": 252,
+  "y": 10,
+  "_index": 0
+}

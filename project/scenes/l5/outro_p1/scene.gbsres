@@ -1,0 +1,100 @@
+{
+  "_resourceType": "scene",
+  "id": "5696af75-b0ad-49ed-9eee-8e6f624eacb8",
+  "_index": 17,
+  "name": "L5/outro p1",
+  "backgroundId": "8d27951f-a9e6-4c53-8c4a-abbf594a46b2",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_18",
+  "x": 2440,
+  "y": 1104,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "f7eda76e-71fd-47e5-8d55-7461fb906e69"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "53e998fb-8a78-405c-b270-a1050a0bfa1d"
+      },
+      "id": "78592277-0636-49df-8113-29eef75a7ced"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "a2d3ea5b-0a48-40ef-9e5c-b147bd112840"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+      },
+      "id": "50445e29-b834-49a8-bbbf-439065dca762"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:I didn't \nthink of it at\nthe time but...",
+          "he was right. I \nwas too trusting\nI missed obvious",
+          "issues in \ncharacter. at\nthe time I was",
+          "thinking he was\ntrying to get me\nto hate humanity"
+        ],
+        "__section": "text",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "182fabf4-6400-411b-9c94-ea5fbe9d38ad"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "28c6f2f0-78da-444d-b91a-4b1922d9be14",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "692a275a-16e0-4644-ab08-6f0fc0a1682a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

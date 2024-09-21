@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "5382612f-59b9-4bee-ad51-d901281d96d4",
+  "name": "level 1-2 and 1-3",
+  "symbol": "bg_level_1_2_and_1_3",
+  "width": 255,
+  "height": 18,
+  "imageWidth": 2040,
+  "imageHeight": 144,
+  "filename": "level 1-2 and 1-3.png",
+  "tileColors": "04ff0+052+034+05!015+05f5+004+05f9+",
+  "autoColor": false
+}

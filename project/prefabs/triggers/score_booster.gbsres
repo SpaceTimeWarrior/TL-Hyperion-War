@@ -1,0 +1,28 @@
+{
+  "_resourceType": "triggerPrefab",
+  "id": "d071ea18-4268-414f-8dfc-b6b0884f7cb0",
+  "name": "score booster",
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6"
+      },
+      "id": "2899feed-6030-47e6-aaa3-d6e16316638a"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "8200b0e0-d063-4a05-b88d-6d204ce7a125",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "7cdd0226-91f8-49d6-a691-7be3c35543a5"
+    }
+  ],
+  "leaveScript": []
+}

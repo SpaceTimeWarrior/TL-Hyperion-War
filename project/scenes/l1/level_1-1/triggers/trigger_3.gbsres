@@ -1,0 +1,292 @@
+{
+  "_resourceType": "trigger",
+  "id": "6dda8f1f-4648-41dc-b4aa-fad3fdb6dd38",
+  "name": "",
+  "prefabId": "",
+  "x": 237,
+  "y": 0,
+  "symbol": "trigger_0",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 15,
+  "script": [
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "d84c0fcb-5f98-4532-adb1-83a2bdb2617b"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "b005141a-969a-43ba-bae0-606e83247fab"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Blair: unknown\nship identify \nyourself. or be",
+          "destroyed. you \nare in Eatherian\nairspace.",
+          "this is your\nlast chance."
+        ],
+        "__section": "layout",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e7de61aa-feed-4d7c-9d97-8232739acefb"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 300,
+        "duration": 0.05,
+        "effect": 0
+      },
+      "id": "45a1f1ae-2121-484e-bdb6-2434045e40d2"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-3"
+      },
+      "id": "c95c1144-032e-47cd-91c2-db8a2786bd96"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "unknown ship: you \ndon't have the ",
+          "authority to do\nanything"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2d31d6a0-542a-4124-978b-c6d493bb7714"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+      },
+      "id": "96d88b69-6b51-47d3-8208-f4b3d0ffbf49"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "27af8477-bbe1-4abe-83b8-7d0e2890aa9b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Blair:yes I am\nI am the \nprincess of",
+          "Eather and you \njust destroyed\nmy father in law",
+          "thus meaning I \nAM THE AUTHORITY",
+          "and you just did\na act of war"
+        ],
+        "__section": "behavior",
+        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8141817d-677c-43e6-a840-d48c8f0ee1ec"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "none",
+        "pitch": 4,
+        "frequency": 300,
+        "duration": 0.05,
+        "effect": 0
+      },
+      "id": "0f0d1664-309e-4711-818b-53584ea18c0b"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "05e1313d-b098-44ee-8b72-dd2594d32e7b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Press @ to shoot \nyour guns. ammo \nrecharges 1/sec"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5b98dfd3-23c9-4939-916a-cbba93187fd9"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "black",
+              "x": 0,
+              "y": 16
+            },
+            "id": "de31aed6-9f79-4b23-bae3-be179eea3161"
+          },
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 2, 0, 16"
+            },
+            "id": "2889a13c-d6db-43e3-bd94-8fe60ef5feab"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "bc4ebbdd-314c-40fe-9dff-a19d9724d9ec",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 16
+              },
+              "__collapse": false,
+              "$variable[V3]$": {
+                "type": "true"
+              }
+            },
+            "id": "90aa3028-e66f-423a-9cd5-e69de6c7e470"
+          }
+        ]
+      },
+      "id": "6dc2cc56-313d-4bb0-9078-5db5d7b47c90"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 2,
+        "duration": 2,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "__collapse": false
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "f7625277-16bb-48b5-9506-a3fea338c351"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+              "spriteStateId": "",
+              "actorId": "249525cb-949f-4466-8f02-52c42f851fc6",
+              "x": 0,
+              "y": 8,
+              "directionType": "target",
+              "otherActorId": "$self$",
+              "direction": "left",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "player",
+              "initialOffset": 0,
+              "speed": 1,
+              "animSpeed": 15,
+              "lifeTime": 3,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "f6ba6149-5e79-43d4-8bb0-371671c04f42"
+          }
+        ]
+      },
+      "id": "a9c74237-4a62-4404-ba86-b7975d2fb407"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

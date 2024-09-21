@@ -1,0 +1,254 @@
+{
+  "_resourceType": "actor",
+  "id": "25a66eee-0ad3-4d9d-8e9d-90b5584df643",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "63e6c034-2a19-4631-80c2-2731b19663de",
+  "prefabId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_60",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 100
+        }
+      },
+      "id": "aca75fbb-a1a8-4a23-b4ef-a7fce7a1e269"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "sub",
+          "valueA": {
+            "type": "property",
+            "target": "player",
+            "property": "ypos"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "13cba26a-df1c-46fe-9921-9fd6c335031c"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "8"
+      },
+      "id": "e3814e25-19d2-4947-8f88-0b4446dfeaa9"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6",
+        "__collapse": false
+      },
+      "id": "9bb42549-3491-4977-972c-2edefca52959"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\nyou beat the boss"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "d99c7655-4b52-4200-88e2-949249e03893"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "5e398f95-f44f-48b6-b84d-561ac6eaf6e1"
+          }
+        ],
+        "false": []
+      },
+      "id": "7b1c6540-561d-4d69-885a-8687d3fed0c8"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "8"
+      },
+      "id": "1ac9a107-16ac-40bb-b695-bb78107867c9"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "13d0f733-91e4-4f67-a0f8-0d7fdcbc7456"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6",
+        "__collapse": false
+      },
+      "id": "1108ef52-c6d7-44fb-ac92-69c1846a64fa"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "8"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Congratulations\nyou beat the boss"
+              ],
+              "__section": "presets",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "30321672-2ba3-4965-accb-3cd28dacd6d8"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "78d47657-515f-49cd-bf4f-bbf1adf2ce0f",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "5d2c0d6f-464f-47a8-aaf2-bc7f64a6af27"
+          },
+          {
+            "command": "EVENT_AWAIT_INPUT",
+            "args": {
+              "input": [
+                "a",
+                "b",
+                "left",
+                "up",
+                "down",
+                "right",
+                "start",
+                "select"
+              ]
+            },
+            "id": "4ec005ab-793a-4de8-8074-69912efaf789"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "fd0fe312-6fd0-4633-81d0-7cd58352bd14"
+          }
+        ],
+        "false": []
+      },
+      "id": "81689324-7586-4675-9c24-5bce020779b5"
+    }
+  ],
+  "x": 253,
+  "y": 7,
+  "_index": 19
+}

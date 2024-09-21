@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+  "name": "damage distance.wav",
+  "symbol": "sound_damage_distance_wav",
+  "filename": "damage distance.wav",
+  "type": "wav"
+}

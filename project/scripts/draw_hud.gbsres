@@ -32,6 +32,42 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "374a3344-3195-4a91-8f6b-3625ed55012b",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "9d6daf49-c4bf-458a-b56f-5e5dcecb271c"
+          }
+        ],
+        "false": []
+      },
+      "id": "efcda71d-99fc-4183-bf8c-a80c2da3b6fb"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
           "type": "variable",
           "value": "V3"
         },

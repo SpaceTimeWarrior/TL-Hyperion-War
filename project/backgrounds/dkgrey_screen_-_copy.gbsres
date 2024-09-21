@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "dkgrey screen - Copy.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

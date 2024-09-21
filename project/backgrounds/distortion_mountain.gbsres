@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "distortion mountain.png",
-  "tileColors": ""
+  "tileColors": "046+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+04c+008+046+",
+  "autoColor": false
 }
