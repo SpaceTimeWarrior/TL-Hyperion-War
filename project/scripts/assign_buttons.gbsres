@@ -20,6 +20,11 @@
       "children": {
         "true": [
           {
+            "command": "EVENT_RNG_SEED",
+            "args": {},
+            "id": "20dc2021-aa54-4d37-ae7d-bf80fab11e90"
+          },
+          {
             "command": "EVENT_IF",
             "args": {
               "condition": {

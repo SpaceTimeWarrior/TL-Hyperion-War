@@ -61,45 +61,96 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "command": "EVENT_SET_VALUE",
             "args": {
-              "type": "beep",
-              "priority": "medium",
-              "pitch": 4,
-              "frequency": 200,
-              "duration": 0.5,
-              "wait": true,
-              "effect": 0
+              "variable": "17",
+              "value": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 100
+                }
+              }
             },
-            "id": "c3af0689-7f26-4a58-a96d-e41503131f2d"
+            "id": "19f079f2-389b-44e5-9392-7f51dc6d3dfc"
           },
           {
-            "command": "EVENT_LAUNCH_PROJECTILE",
+            "command": "EVENT_IF",
             "args": {
-              "__section": "projectile",
-              "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
-              "spriteStateId": "",
-              "actorId": "$self$",
-              "x": 0,
-              "y": 0,
-              "directionType": "direction",
-              "otherActorId": "$self$",
-              "direction": "left",
-              "angle": 0,
-              "angleVariable": "L0",
-              "targetActorId": "$self$",
-              "initialOffset": 0,
-              "speed": 2,
-              "animSpeed": 15,
-              "lifeTime": 1,
-              "loopAnim": true,
-              "destroyOnHit": true,
-              "collisionGroup": "3",
-              "collisionMask": [
-                "player"
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 40
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.9,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "c3af0689-7f26-4a58-a96d-e41503131f2d"
+                },
+                {
+                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "args": {
+                    "__section": "projectile",
+                    "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+                    "spriteStateId": "",
+                    "actorId": "$self$",
+                    "x": 0,
+                    "y": 0,
+                    "directionType": "direction",
+                    "otherActorId": "$self$",
+                    "direction": "left",
+                    "angle": 0,
+                    "angleVariable": "L0",
+                    "targetActorId": "$self$",
+                    "initialOffset": 0,
+                    "speed": 2,
+                    "animSpeed": 15,
+                    "lifeTime": 1,
+                    "loopAnim": true,
+                    "destroyOnHit": true,
+                    "collisionGroup": "3",
+                    "collisionMask": [
+                      "player"
+                    ]
+                  },
+                  "id": "081a11da-9914-48af-ace5-efc6c1d48628"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "8997e78c-7ce1-41dc-b151-cb2fa37ccaa4"
+                }
               ]
             },
-            "id": "081a11da-9914-48af-ace5-efc6c1d48628"
+            "id": "6a4f5b59-9332-4b4c-98f9-4118f7fbd029"
           }
         ],
         "false": []

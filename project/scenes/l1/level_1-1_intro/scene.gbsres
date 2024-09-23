@@ -126,9 +126,28 @@
           "value": 9
         },
         "direction": "right",
-        "fadeSpeed": "2"
+        "fadeSpeed": "2",
+        "__comment": false
       },
       "id": "d985549f-fb62-4f8d-8bc6-94d61ac481df"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "b58ecfe0-133f-4723-a039-bf3571e58516",
+        "x": {
+          "type": "number",
+          "value": 231
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "right",
+        "fadeSpeed": "2",
+        "__comment": true
+      },
+      "id": "21704d8f-ef62-49cf-b0e9-4fa905f93fff"
     }
   ],
   "playerHit1Script": [],

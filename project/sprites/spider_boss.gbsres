@@ -22,19 +22,6 @@
               "id": "070c8bc3-e216-494b-84a1-490690d585d0",
               "tiles": [
                 {
-                  "id": "a8e64307-60d3-4598-a43c-40bc4e903c30",
-                  "x": -20,
-                  "y": 32,
-                  "sliceX": 0,
-                  "sliceY": 16,
-                  "palette": 0,
-                  "flipX": false,
-                  "flipY": false,
-                  "objPalette": "OBP1",
-                  "paletteIndex": 2,
-                  "priority": false
-                },
-                {
                   "id": "c4d6dca9-b7a7-4701-b071-c612dc5c34b5",
                   "x": -12,
                   "y": 32,
@@ -108,19 +95,6 @@
                   "palette": 0,
                   "flipX": false,
                   "flipY": false,
-                  "objPalette": "OBP1",
-                  "paletteIndex": 2,
-                  "priority": false
-                },
-                {
-                  "id": "191398e2-ccef-4aee-ba78-7e5a5ea2cd03",
-                  "x": -20,
-                  "y": 16,
-                  "sliceX": 0,
-                  "sliceY": 16,
-                  "palette": 0,
-                  "flipX": false,
-                  "flipY": true,
                   "objPalette": "OBP1",
                   "paletteIndex": 2,
                   "priority": false
@@ -619,9 +593,9 @@
   "numTiles": 12,
   "canvasWidth": 56,
   "canvasHeight": 64,
-  "boundsX": -13,
-  "boundsY": 22,
-  "boundsWidth": 41,
-  "boundsHeight": 20,
+  "boundsX": -16,
+  "boundsY": 20,
+  "boundsWidth": 44,
+  "boundsHeight": 24,
   "animSpeed": 15
 }

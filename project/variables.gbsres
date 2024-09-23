@@ -90,6 +90,21 @@
       "id": "5aca0ece-8fec-4844-a54e-392ceae87191__L0",
       "name": "Local 0",
       "symbol": "var_local_0"
+    },
+    {
+      "id": "16",
+      "name": "atk_counter",
+      "symbol": "var_atk_counter"
+    },
+    {
+      "id": "442446d2-8cee-4635-8bc4-a2f49c06ac07__L0",
+      "name": "Local 0",
+      "symbol": "var_local_2"
+    },
+    {
+      "id": "17",
+      "name": "rand",
+      "symbol": "var_rand"
     }
   ]
 }

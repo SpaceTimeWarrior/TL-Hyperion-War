@@ -27,27 +27,151 @@
         }
       },
       "id": "0a421fbe-23a4-4d5a-8ca2-92369778a8c1"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "16",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "0edd0ad4-006b-4c06-84e2-c6843951178c"
+          },
+          {
+            "command": "EVENT_SET_TIMER_SCRIPT",
+            "args": {
+              "timer": 3,
+              "duration": 2,
+              "frames": 30,
+              "__scriptTabs": "end"
+            },
+            "children": {
+              "script": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "6682ea43-e550-4620-99a1-986941f521b5"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "5fef77af-59a4-4543-a2f7-0840e2362378"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "16",
+                    "value": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "16"
+                      }
+                    }
+                  },
+                  "id": "c8330394-dd07-4ae4-a4e0-471d5505bc65"
+                }
+              ]
+            },
+            "id": "a7fd5e30-a713-494c-ba8f-fa126329c6fb"
+          }
+        ]
+      },
+      "id": "f57d94e1-33f7-477b-968b-fc0f514ccbfc"
     }
   ],
   "updateScript": [
     {
-      "command": "EVENT_ACTOR_MOVE_TO",
+      "command": "EVENT_IF",
       "args": {
-        "actorId": "$self$",
-        "x": {
-          "type": "property",
-          "target": "$self$",
-          "property": "xpos"
+        "condition": {
+          "type": "variable",
+          "value": "16"
         },
-        "y": {
-          "type": "property",
-          "target": "player",
-          "property": "ypos"
-        },
-        "moveType": "vertical",
-        "useCollisions": false
+        "__collapseElse": false
       },
-      "id": "5e7245a1-14ea-4e88-aeda-55095301ca76"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "$self$",
+              "distance": 20,
+              "speed": 2,
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "e35b3cca-6bf2-4365-905d-efaa6733af39"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "property",
+                "target": "$self$",
+                "property": "xpos"
+              },
+              "y": {
+                "type": "rnd",
+                "value": {
+                  "type": "number",
+                  "value": 15
+                }
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "bf9ddca6-f0a6-463e-9248-f43c6e222488"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "property",
+                "target": "$self$",
+                "property": "xpos"
+              },
+              "y": {
+                "type": "property",
+                "target": "player",
+                "property": "ypos"
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "5e7245a1-14ea-4e88-aeda-55095301ca76"
+          }
+        ]
+      },
+      "id": "5614f156-5302-44e1-8a8b-2ca488ded3be"
     }
   ],
   "hit1Script": [

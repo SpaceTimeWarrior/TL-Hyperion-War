@@ -48,7 +48,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 1
+            "value": 2
           }
         },
         "moveType": "vertical",
@@ -64,6 +64,19 @@
         "variable": "8"
       },
       "id": "e3814e25-19d2-4947-8f88-0b4446dfeaa9"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "9863c5b8-dea3-4ac0-9c4a-ddabf3b1bd9a"
     },
     {
       "command": "EVENT_INC_VALUE",
