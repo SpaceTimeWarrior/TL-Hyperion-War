@@ -11,7 +11,11 @@
   "paletteIds": [],
   "spritePaletteIds": [
     "default-bg-5",
-    "1b759232-0f57-4300-8203-91f24e570817"
+    "1b759232-0f57-4300-8203-91f24e570817",
+    "1eecc69b-d962-49d0-b5cf-b3384c5f0f61",
+    "default-bg-2",
+    "7a50aced-4929-4b78-b02e-a5ee40dd0278",
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
   "collisions": "",
   "autoFadeSpeed": 1,
@@ -20,6 +24,28 @@
   "y": 392,
   "script": [
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "18",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "09d1db35-c7dd-419b-a515-3f9c7e614c1c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "25",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "2d22f913-3466-4271-9dac-4d00d34ebd7f"
+    },
+    {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
         "actorId": "$self$"
@@ -27,91 +53,382 @@
       "id": "f833fe31-838f-4b5f-b678-6a9174f7c115"
     },
     {
-      "command": "EVENT_PALETTE_SET_UI",
+      "command": "EVENT_SWITCH",
       "args": {
-        "palette": "default-bg-4"
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "170a1ebc-1fb6-4efb-a90b-647ea7dcf4a7"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 390,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "01bdc94e-4d99-482d-858f-f8624531d81e"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Jem: I always\nwondered how was\nit like in",
-          "the past. before\nyou died."
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "63ec2f9f-ebd9-4abf-b975-acebed17f968"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-4"
+                  },
+                  "id": "31361969-e2d7-4d45-a139-4bbfe0045e69"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "59c160d4-88eb-4ed6-b173-c4bd2539e879"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Jem: I always\nwondered how was\nit like in",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!the past. before\nyou died."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "f49d6d8d-fdfc-4bf4-a387-0742e51e35fc"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-ui"
+                  },
+                  "id": "991450e2-fb2d-4309-bd70-ad025747c2b8"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "b4240803-8fe4-42a4-8746-874a54e22e9c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Blair: I guess I\nwill tell the\nstory."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3ed87937-c5a9-47b3-8cfc-305e0eb14534"
+                }
+              ]
+            },
+            "id": "1ee1a691-7e6d-47d6-be39-b52d7aea745f"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "d3efa303-2cf1-4f1b-bf43-425924f4a679"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-ui"
-      },
-      "id": "0e7047f8-dd95-4d6e-b65d-db391f86122a"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "3781bc74-2d8a-4165-9f30-194744216fb7"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Blair: I guess I\nwill tell the\nstory."
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "f62b8216-c868-4edf-95a3-b416bb45b1d3"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-4"
+                  },
+                  "id": "6de1091b-0760-464c-8e15-db5b56266b6a"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "9e37c09d-ea08-4a70-8ce6-88c7d24ee5da"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Jem: I always\nwondered how was\nit like in",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!the past. before\nyou died."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "b0acb5a5-1360-4acf-aaee-fddcdeb1d870"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-ui"
+                  },
+                  "id": "7d4406a9-64d4-4acd-b78f-10ef508399e7"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "c39fba14-5fa7-44f7-8837-76c1bf1c76ac"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: I guess I\nwill tell the\nstory."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "81c51946-5160-42b8-9b08-ab1090faf676"
+                }
+              ]
+            },
+            "id": "1d5bcbf7-a0cd-4dcc-b7af-b3c07873e1cc"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "219dfa24-512f-4581-b8d5-32de943703b7"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-4"
+                  },
+                  "id": "9ca7bb3f-e55d-40c4-87cb-53abbd9daa60"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "71cf1ded-2601-460d-9d19-d46446497926"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Jem: I always\nwondered how was\nit like in",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!the past. before\nyou died."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "e92322eb-686d-42d5-8e9d-cca400583c36"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-ui"
+                  },
+                  "id": "069221b7-84b1-432d-851d-9fb6781f4951"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "47b478a6-4ec2-4a9f-9beb-ceeed78d222b"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: I guess I\nwill tell the\nstory."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "cb0c1462-6a8b-4313-9f32-d737c0db40cc"
+                }
+              ]
+            },
+            "id": "3edf4e7f-c8af-450a-9abf-b989f9a330f3"
+          }
+        ]
       },
-      "id": "2950c49a-ed81-4871-b7ab-35748b39780b"
+      "id": "34b0c9f2-c14b-4887-82c4-6a33b8a7cf88"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
@@ -134,10 +451,10 @@
     {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "sceneId": "b58ecfe0-133f-4723-a039-bf3571e58516",
+        "sceneId": "cbde9619-59c7-49ec-b4d1-436fbb89a1bf",
         "x": {
           "type": "number",
-          "value": 231
+          "value": 0
         },
         "y": {
           "type": "number",

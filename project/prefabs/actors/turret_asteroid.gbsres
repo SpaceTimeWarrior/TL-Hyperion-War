@@ -81,7 +81,7 @@
                 "type": "gt",
                 "valueA": {
                   "type": "variable",
-                  "value": "0"
+                  "value": "17"
                 },
                 "valueB": {
                   "type": "number",
@@ -106,32 +106,74 @@
                   "id": "c3af0689-7f26-4a58-a96d-e41503131f2d"
                 },
                 {
-                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "command": "EVENT_IF_COLOR_SUPPORTED",
                   "args": {
-                    "__section": "projectile",
-                    "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
-                    "spriteStateId": "",
-                    "actorId": "$self$",
-                    "x": 0,
-                    "y": 0,
-                    "directionType": "direction",
-                    "otherActorId": "$self$",
-                    "direction": "left",
-                    "angle": 0,
-                    "angleVariable": "L0",
-                    "targetActorId": "$self$",
-                    "initialOffset": 0,
-                    "speed": 2,
-                    "animSpeed": 15,
-                    "lifeTime": 1,
-                    "loopAnim": true,
-                    "destroyOnHit": true,
-                    "collisionGroup": "3",
-                    "collisionMask": [
-                      "player"
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_LAUNCH_PROJECTILE",
+                        "args": {
+                          "__section": "source",
+                          "spriteSheetId": "26d5375b-1713-4703-8765-c29dbbef1473",
+                          "spriteStateId": "",
+                          "actorId": "$self$",
+                          "x": 0,
+                          "y": 0,
+                          "directionType": "target",
+                          "otherActorId": "$self$",
+                          "direction": "left",
+                          "angle": 0,
+                          "angleVariable": "L0",
+                          "targetActorId": "player",
+                          "initialOffset": 0,
+                          "speed": 2,
+                          "animSpeed": 15,
+                          "lifeTime": 1,
+                          "loopAnim": true,
+                          "destroyOnHit": true,
+                          "collisionGroup": "3",
+                          "collisionMask": [
+                            "player"
+                          ]
+                        },
+                        "id": "93bf6281-eac8-40e9-ab2b-74ec543e43dc"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_LAUNCH_PROJECTILE",
+                        "args": {
+                          "__section": "source",
+                          "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+                          "spriteStateId": "",
+                          "actorId": "$self$",
+                          "x": 0,
+                          "y": 0,
+                          "directionType": "target",
+                          "otherActorId": "$self$",
+                          "direction": "left",
+                          "angle": 0,
+                          "angleVariable": "L0",
+                          "targetActorId": "player",
+                          "initialOffset": 0,
+                          "speed": 2,
+                          "animSpeed": 15,
+                          "lifeTime": 1,
+                          "loopAnim": true,
+                          "destroyOnHit": true,
+                          "collisionGroup": "3",
+                          "collisionMask": [
+                            "player"
+                          ],
+                          "__collapse": false
+                        },
+                        "id": "081a11da-9914-48af-ace5-efc6c1d48628"
+                      }
                     ]
                   },
-                  "id": "081a11da-9914-48af-ace5-efc6c1d48628"
+                  "id": "ac02a16a-c87e-45e1-b199-59859ceb0fa0"
                 }
               ],
               "false": [

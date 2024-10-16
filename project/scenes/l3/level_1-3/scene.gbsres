@@ -348,7 +348,7 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -373,53 +373,11 @@
                                 ],
                                 "false": [
                                   {
-                                    "command": "EVENT_IF_INPUT",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "input": [
-                                        "b"
-                                      ],
-                                      "__collapseElse": false,
-                                      "__collapse": true
+                                      "customEventId": "01eace55-7462-4f91-ad27-0d5c14d74ffe"
                                     },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed",
-                                            "value": {
-                                              "type": "number",
-                                              "value": 50
-                                            }
-                                          },
-                                          "id": "bf8bbcb3-dca6-4509-8482-33550ee960b4"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "0be15154-815d-4ff8-a816-cd7c9360e1f7"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "2d076102-d98f-4771-b1ed-48c96643d90a"
-                                        }
-                                      ],
-                                      "false": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed"
-                                          },
-                                          "id": "0dc80e3f-617e-4ca4-8853-5d6ffdabea7d"
-                                        }
-                                      ]
-                                    },
-                                    "id": "3dee6da1-8e4f-4fff-92bb-e9d958be8fe2"
+                                    "id": "84b9d00c-061a-4229-9c0a-720c2db6043b"
                                   },
                                   {
                                     "command": "EVENT_IF",
@@ -520,33 +478,286 @@
             "id": "91084daa-6a29-4577-b088-ab489a832258"
           },
           {
-            "command": "EVENT_TEXT",
+            "command": "EVENT_SWITCH",
             "args": {
-              "text": [
-                "sune:please be\nsafe. I will \nmake sure our",
-                "child is safe\neven if \nsomething where",
-                "to happen to us.\nI don't want to \nhave another",
-                "funeral. you are\nreaching the \nedge of high",
-                "speed \ncommunication so\ngood luck"
-              ],
-              "__section": "behavior",
-              "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "text",
-              "closeButton": "a",
-              "closeDelayTime": 0.8,
-              "closeDelayFrames": 30
+              "variable": "22",
+              "choices": 2,
+              "__collapseCase0": false,
+              "value0": 0,
+              "__collapseCase1": false,
+              "value1": 1,
+              "__collapseCase2": false,
+              "value2": 3,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": false
             },
-            "id": "8a4b8ef9-3db5-4b69-bbd5-530fc312d1b2"
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_SET_DIALOGUE_FRAME",
+                  "args": {
+                    "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+                  },
+                  "id": "71d744d9-4c76-4e30-bcd3-102c6c4a4a77"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "",
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true,
+                          "__label": "hyperion war font",
+                          "__comment": true
+                        },
+                        "id": "1190c6c9-9367-4578-853c-d763f9fb971b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!sune:please be\nsafe. I will \nmake sure our",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!child is safe\neven if \nsomething where",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!to happen to us.\nI don't want to \nhave another",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!funeral. you are\nreaching the \nedge of high",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!speed \ncommunication so\ngood luck"
+                          ],
+                          "__section": "text",
+                          "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.8,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "2a06cbae-e7ca-45c2-9197-952d758dc6c2"
+                      }
+                    ]
+                  },
+                  "id": "39ffdedb-c7bf-4fe0-a084-69cc39818c5e"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_SET_DIALOGUE_FRAME",
+                  "args": {
+                    "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+                  },
+                  "id": "fbd4105b-9a0d-4bea-b1c3-c65d3bb7be68"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "",
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true,
+                          "__label": "TL Basic font",
+                          "__comment": true
+                        },
+                        "id": "fb7537ae-159c-43b9-a846-c7521465c1ce"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!sune:please be\nsafe. I will \nmake sure our",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!child is safe\neven if \nsomething where",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!to happen to us.\nI don't want to \nhave another",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!funeral. you are\nreaching the \nedge of high",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!speed \ncommunication so\ngood luck"
+                          ],
+                          "__section": "text",
+                          "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.8,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "0da915bc-3c28-478b-85f5-7b7b26089d09"
+                      }
+                    ]
+                  },
+                  "id": "d7457449-ee9c-404e-9787-6838e35dbfcb"
+                }
+              ],
+              "true2": [],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": [
+                {
+                  "command": "EVENT_SET_DIALOGUE_FRAME",
+                  "args": {
+                    "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+                  },
+                  "id": "74450a7a-1eae-48f3-9559-22318c1c6747"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "",
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true,
+                          "__label": "TL Basic font",
+                          "__comment": true
+                        },
+                        "id": "c1f14b18-1d2a-4400-92a1-f04bcdc15942"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!sune:please be\nsafe. I will \nmake sure our",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!child is safe\neven if \nsomething where",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!to happen to us.\nI don't want to \nhave another",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!funeral. you are\nreaching the \nedge of high",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!speed \ncommunication so\ngood luck"
+                          ],
+                          "__section": "text",
+                          "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.8,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "140cea07-3cac-406e-a369-7b0fa053fed1"
+                      }
+                    ]
+                  },
+                  "id": "571fa483-d0ca-49b5-8fca-e6ba8341ea17"
+                }
+              ]
+            },
+            "id": "2c093418-9d0b-4f26-85ee-ad243c47e4ce"
           }
         ]
       },

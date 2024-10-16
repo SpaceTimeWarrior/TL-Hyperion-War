@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "bba68b1b-ce94-4041-8f8d-cd283e563cf6",
+  "name": "TLframe",
+  "symbol": "tileset_tlframe",
+  "width": 3,
+  "height": 3,
+  "imageWidth": 24,
+  "imageHeight": 24,
+  "filename": "TLframe.png"
+}

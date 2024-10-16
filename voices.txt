@@ -6,13 +6,16 @@
 below is a list of characters this is the neutral sound
 
 character voices
-blair 520 hz
+blair 520hz
 sune 50hz
 lark 210hz
 wind 410hz
 fire 410hz
 Earth defense force ship crew 300hz
 jem(intro only) 390hz
+bias(level 5 boss) 220hz
+unknown(flashback voice) 320hz
+
 
 
 shadow flame characters

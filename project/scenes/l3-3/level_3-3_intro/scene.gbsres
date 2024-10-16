@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "ddcd4b80-3f81-4239-afd6-b71c4719c83a",
+  "_index": 36,
+  "name": "L3-3/Level 3-3 intro",
+  "backgroundId": "a2af11e9-e36d-4e17-b4ee-4dd2233b7aa3",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_37",
+  "x": 184,
+  "y": 2408,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

@@ -1,0 +1,96 @@
+{
+  "_resourceType": "script",
+  "id": "01eace55-7462-4f91-ad27-0d5c14d74ffe",
+  "name": "B button boost",
+  "description": "b button",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_4",
+  "script": [
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ENGINE_FIELD_SET",
+            "args": {
+              "engineFieldKey": "shooter_scroll_speed",
+              "value": {
+                "type": "number",
+                "value": 50
+              }
+            },
+            "id": "90916e30-08ba-4c5d-8cdc-e06a0ebfd9fd"
+          },
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "1"
+            },
+            "id": "9b9f83cf-b3f4-4ee1-bb99-e60385480004"
+          },
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "1"
+            },
+            "id": "51581b73-0405-469c-ae05-4661dfff2f1f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "27",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "821ebd77-2c67-4ce2-bf81-469908b09c57"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 3
+            },
+            "id": "494b4015-9c4a-4e04-a1b2-4f814d2409bd"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ENGINE_FIELD_SET",
+            "args": {
+              "engineFieldKey": "shooter_scroll_speed"
+            },
+            "id": "a7d8f405-e909-49a2-bd7c-07ebfbd7c641"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "27",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "6023a0e0-ddac-4dba-8051-51d0e9c39eaa"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 1
+            },
+            "id": "920851d6-7f14-4db4-8965-2eb506de449c"
+          }
+        ]
+      },
+      "id": "65065ff1-3f12-41a9-a3e5-d693c020b68e"
+    }
+  ]
+}

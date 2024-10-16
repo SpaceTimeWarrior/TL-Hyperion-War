@@ -5,7 +5,7 @@
   "type": "SHMUP",
   "name": "L5/level 1-5",
   "symbol": "scene_16",
-  "x": 408,
+  "x": 400,
   "y": 1104,
   "width": 250,
   "height": 18,
@@ -350,7 +350,7 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -375,53 +375,11 @@
                                 ],
                                 "false": [
                                   {
-                                    "command": "EVENT_IF_INPUT",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "input": [
-                                        "b"
-                                      ],
-                                      "__collapseElse": false,
-                                      "__collapse": true
+                                      "customEventId": "01eace55-7462-4f91-ad27-0d5c14d74ffe"
                                     },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed",
-                                            "value": {
-                                              "type": "number",
-                                              "value": 50
-                                            }
-                                          },
-                                          "id": "259b736d-ebab-47b4-80e4-d2d639876097"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "11c0009d-3930-4ece-bbd6-c1447ff8a3bc"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "a5c9b0b1-8612-48fd-86b8-8eb96d0d7985"
-                                        }
-                                      ],
-                                      "false": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed"
-                                          },
-                                          "id": "0c9c2ca8-5733-4f9e-ab2e-3a9e9ff886c9"
-                                        }
-                                      ]
-                                    },
-                                    "id": "6c899e8a-5810-4aae-89b6-3126e0ff34be"
+                                    "id": "e20fd6bb-b12d-4832-b9e2-8a842f51b3cc"
                                   },
                                   {
                                     "command": "EVENT_IF",
@@ -573,8 +531,24 @@
       "id": "5d3a51db-1306-4eee-b330-48d5f6da7223"
     }
   ],
-  "playerHit1Script": [],
-  "playerHit2Script": [],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a9cb8f39-a699-4e1e-aa19-eb78c2842f4e"
+      },
+      "id": "12042f62-d71e-4d77-acb0-14bab48985ed"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a9cb8f39-a699-4e1e-aa19-eb78c2842f4e"
+      },
+      "id": "8783ea52-d7ef-41e9-b3a3-373309cf0950"
+    }
+  ],
   "playerHit3Script": [
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",

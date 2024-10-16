@@ -6,7 +6,7 @@
   "name": "L2/Level 1-2",
   "symbol": "scene_6",
   "x": 368,
-  "y": 576,
+  "y": 584,
   "width": 255,
   "height": 18,
   "backgroundId": "5382612f-59b9-4bee-ad51-d901281d96d4",
@@ -348,7 +348,7 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -373,53 +373,11 @@
                                 ],
                                 "false": [
                                   {
-                                    "command": "EVENT_IF_INPUT",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "input": [
-                                        "b"
-                                      ],
-                                      "__collapseElse": false,
-                                      "__collapse": true
+                                      "customEventId": "01eace55-7462-4f91-ad27-0d5c14d74ffe"
                                     },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed",
-                                            "value": {
-                                              "type": "number",
-                                              "value": 50
-                                            }
-                                          },
-                                          "id": "82e7faca-bec3-4c51-b1c2-a1fcfd59de81"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "1ef35938-ef8a-4026-8ab3-e88fc39991ea"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "885db28c-e690-40ea-9a42-7ee74f1ad8c6"
-                                        }
-                                      ],
-                                      "false": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed"
-                                          },
-                                          "id": "83425074-ddc9-4286-94ac-661043b1a1a7"
-                                        }
-                                      ]
-                                    },
-                                    "id": "f1858235-a0bf-4e13-8493-7d4d71925daf"
+                                    "id": "33e591ec-7f8f-4355-8b65-07502ad67481"
                                   },
                                   {
                                     "command": "EVENT_IF",
@@ -495,97 +453,478 @@
       "id": "4b9bb85f-22b4-4def-bc40-f826af62a53b"
     },
     {
-      "command": "EVENT_GROUP",
+      "command": "EVENT_SWITCH",
       "args": {
-        "__collapse": false
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
       "children": {
-        "true": [
+        "true0": [
           {
-            "command": "EVENT_PALETTE_SET_UI",
+            "command": "EVENT_SET_DIALOGUE_FRAME",
             "args": {
-              "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
             },
-            "id": "055460b7-e625-42ec-9bfc-fce521830920"
+            "id": "56ba5c94-691d-4121-9849-6f0bcc814af4"
           },
           {
-            "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+            "command": "EVENT_GROUP",
             "args": {
-              "type": "tone",
-              "pitch": 4,
-              "frequency": 50,
-              "duration": 0.03,
-              "effect": 0
+              "__collapse": false
             },
-            "id": "f693ae48-4c53-43dc-9e55-9c42ba37806f"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "bedabe42-592b-4eb0-bc08-d99e34ac4b02"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                        },
+                        "id": "055460b7-e625-42ec-9bfc-fce521830920"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 50,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "f693ae48-4c53-43dc-9e55-9c42ba37806f"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!sune: please\ndon't go. I have\na bad feeling",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!about this.\nsince you \nprobably will",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!ignore me.the\nassassins that\nwe captured ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!reprogrammed the\nspider web array\nso be careful"
+                          ],
+                          "__section": "text",
+                          "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "1dfb9c4a-1b09-454b-a1bc-6e7330f2db32"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "b266245c-90b5-4a37-ac94-3eea6c96f68d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair: ok. I\nwill keep that\nin mind"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "990741ae-d9e5-424e-8a80-8730a599dbc5"
+                      }
+                    ]
+                  },
+                  "id": "f779a69e-0916-4a8a-ab4f-db70bc9750aa"
+                }
+              ]
+            },
+            "id": "8687c474-53a3-47d6-9ecf-d3c415aae3ae"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "ac8ce73c-9b03-4086-a30a-172d8182c226"
           },
           {
-            "command": "EVENT_TEXT",
+            "command": "EVENT_GROUP",
             "args": {
-              "text": [
-                "sune: please\ndon't go. I have\na bad feeling",
-                "about this.\nsince you \nprobably will",
-                "ignore me.the\nassassins that\nwe captured ",
-                "reprogrammed the\nspider web array\nso be careful"
-              ],
-              "__section": "behavior",
-              "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "text",
-              "closeButton": "a",
-              "closeDelayTime": 1,
-              "closeDelayFrames": 30
+              "__collapse": false
             },
-            "id": "1dfb9c4a-1b09-454b-a1bc-6e7330f2db32"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "f4942c2c-95e2-42b8-a179-776804df7f78"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                        },
+                        "id": "bc918c36-ddf7-4e82-9525-e45ae0d4dba0"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 50,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "eb8f626c-f04a-4471-90c9-caa3a64c6713"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!sune: please\ndon't go. I have\na bad feeling",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!about this.\nsince you \nprobably will",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!ignore me.the\nassassins that\nwe captured ",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!reprogrammed the\nspider web array\nso be careful"
+                          ],
+                          "__section": "text",
+                          "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "fb80e237-c04f-4a5f-bc1c-66e035c8306d"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "80dac015-b737-40e9-b64c-2829a2f62d87"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair: ok. I\nwill keep that\nin mind"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "c8aa17ee-94ec-469b-a2c3-c43e9fb489fd"
+                      }
+                    ]
+                  },
+                  "id": "2c04683a-d9fb-45d5-9ed7-153542f281a1"
+                }
+              ]
+            },
+            "id": "6876b551-7454-453f-914d-ee63bf7f5c59"
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "d39ce853-9414-4453-a1dc-3382cc3231b0"
           },
           {
-            "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+            "command": "EVENT_GROUP",
             "args": {
-              "type": "tone",
-              "pitch": 4,
-              "frequency": 520,
-              "duration": 0.03,
-              "effect": 0
+              "__collapse": false
             },
-            "id": "b266245c-90b5-4a37-ac94-3eea6c96f68d"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "blair: ok. I\nwill keep that\nin mind"
-              ],
-              "__section": "behavior",
-              "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "top",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "text",
-              "closeButton": "a",
-              "closeDelayTime": 1,
-              "closeDelayFrames": 30
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "46a1ca94-e2a6-44b9-a204-d7c2c059c312"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                        },
+                        "id": "53cfc4d6-5ade-4049-adbc-2e7c2a253db9"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 50,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "ec4fbbb6-2820-4a4e-86af-fc2c2a603a01"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!sune: please\ndon't go. I have\na bad feeling",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!about this.\nsince you \nprobably will",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!ignore me.the\nassassins that\nwe captured ",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!reprogrammed the\nspider web array\nso be careful"
+                          ],
+                          "__section": "text",
+                          "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "3df99df7-45d4-4715-9abf-7f7d7cd13db9"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "cc974c2b-3fa1-45d8-9d0f-b4cb12116c4f"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair: ok. I\nwill keep that\nin mind"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "e17cf3c4-b23b-4349-9727-c06c0b0ce0bf"
+                      }
+                    ]
+                  },
+                  "id": "dd0a0062-e669-45d9-bda7-229d347ced2e"
+                }
+              ]
             },
-            "id": "990741ae-d9e5-424e-8a80-8730a599dbc5"
+            "id": "8bf9d6c2-1291-4577-a4ae-31a0b3835c94"
           }
         ]
       },
-      "id": "f779a69e-0916-4a8a-ab4f-db70bc9750aa"
+      "id": "8fe9736a-dcf9-4d31-8f16-413013eade8a"
     },
     {
       "command": "EVENT_GROUP",

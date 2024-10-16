@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "a3e929b2-bb1e-43ba-aaf1-758774d38f13",
+  "_index": 44,
+  "name": "L4-1/Level 4-1 outro p1",
+  "backgroundId": "8d27951f-a9e6-4c53-8c4a-abbf594a46b2",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_45",
+  "x": 2472,
+  "y": 2808,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

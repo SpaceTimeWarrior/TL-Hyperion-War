@@ -16,11 +16,12 @@
     "",
     "",
     "",
-    "default-bg-3"
+    "default-bg-1"
   ],
   "spritePaletteIds": [
     "default-bg-5",
-    "9e0ce806-cd5d-4f8c-89a0-bbab5ca8e910"
+    "9e0ce806-cd5d-4f8c-89a0-bbab5ca8e910",
+    "d8ff2d0a-0648-438e-a6b8-a6fa9e3289f6"
   ],
   "autoFadeSpeed": 1,
   "script": [
@@ -214,7 +215,8 @@
                   "command": "EVENT_THREAD_START",
                   "args": {
                     "variable": "T0",
-                    "__scriptTabs": "true"
+                    "__scriptTabs": "true",
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -356,7 +358,7 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -381,53 +383,11 @@
                                 ],
                                 "false": [
                                   {
-                                    "command": "EVENT_IF_INPUT",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "input": [
-                                        "b"
-                                      ],
-                                      "__collapseElse": false,
-                                      "__collapse": true
+                                      "customEventId": "01eace55-7462-4f91-ad27-0d5c14d74ffe"
                                     },
-                                    "children": {
-                                      "true": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed",
-                                            "value": {
-                                              "type": "number",
-                                              "value": 50
-                                            }
-                                          },
-                                          "id": "75b22a79-49ef-4e5f-ad46-eaf9297a378c"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "15ea7c70-3872-4551-b8b3-b21faf0b3b06"
-                                        },
-                                        {
-                                          "command": "EVENT_DEC_VALUE",
-                                          "args": {
-                                            "variable": "1"
-                                          },
-                                          "id": "9ce81f55-fd89-417b-a39e-f698ab9c12e8"
-                                        }
-                                      ],
-                                      "false": [
-                                        {
-                                          "command": "EVENT_ENGINE_FIELD_SET",
-                                          "args": {
-                                            "engineFieldKey": "shooter_scroll_speed"
-                                          },
-                                          "id": "66a3fb19-de9a-4960-9ea0-37a5fd390ed5"
-                                        }
-                                      ]
-                                    },
-                                    "id": "928ec69b-77d3-49a9-aaf9-070e1fff94ce"
+                                    "id": "36a3ebbc-a748-44a1-a347-55d10313524e"
                                   },
                                   {
                                     "command": "EVENT_IF",
@@ -521,111 +481,554 @@
       "id": "468dbc09-a408-41f7-8bf2-5b7ff48ba4e5"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_SWITCH",
       "args": {
-        "text": [
-          "blair: so If I\nsucceed you will\nlet me into the",
-          "planet. below\nto find out what\nis going on"
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "f4f8c03e-c4a2-4d56-9fe8-1cc764f8396a"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "01366bf6-8534-460d-a7ab-14aa1deab148"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair: so If I\nsucceed you will\nlet me into the",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!planet. below\nto find out what\nis going on"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "e3d40b01-9221-4b18-b46e-7e4e354a8352"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "78174366-0caf-4dc1-b57a-713b7122d5c0"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-3"
+                        },
+                        "id": "ae215486-4c25-4b78-8627-3ddf549b37e8"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!???:yes to be\nmore specific to\nthe end of the",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!trench without\ngoing above"
+                          ],
+                          "__section": "text",
+                          "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "50e2dab7-047e-403d-9138-2e44642169af"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "f1d58f7f-36f8-4415-812a-4a368456b014"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair: that \nsounds like a\nstrange request",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!but if it is a\nhuman custom\nI accept"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "414d6fa8-011c-430a-985c-dc1d7f9c9807"
+                      }
+                    ]
+                  },
+                  "id": "1055fb0b-c862-48f2-ab82-b55c1059fdb2"
+                }
+              ]
+            },
+            "id": "cef918d6-8885-4602-b706-e16b05557e81"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "e3d40b01-9221-4b18-b46e-7e4e354a8352"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 200,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "78174366-0caf-4dc1-b57a-713b7122d5c0"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-bg-3"
-      },
-      "id": "ae215486-4c25-4b78-8627-3ddf549b37e8"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "???:yes to be\nmore specific to\nthe end of the",
-          "trench without\ngoing above"
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "ba47454f-7371-475d-ab92-098cac99133b"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "96b1342e-9ee8-401c-a356-72982abfae01"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair: so If I\nsucceed you will\nlet me into the",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!planet. below\nto find out what\nis going on"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "bf9261a7-0124-4336-a7cc-b0aa7a791c58"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "f7a539fd-7f28-4b7e-83d0-63f1849a2a50"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-3"
+                        },
+                        "id": "792971d9-32cf-4030-ae12-15f98e776c09"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:yes to be\nmore specific to\nthe end of the",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!trench without\ngoing above"
+                          ],
+                          "__section": "text",
+                          "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "1ddb8fde-41cf-4e95-a7d3-20a1fdc70822"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "70e646f1-fb05-4322-825a-39d9cc40cdd0"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair: that \nsounds like a\nstrange request",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!but if it is a\nhuman custom\nI accept"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "1830abb0-26d2-4ed0-947c-a90db54dea84"
+                      }
+                    ]
+                  },
+                  "id": "03596839-5857-4aab-a1b7-f0d302674327"
+                }
+              ]
+            },
+            "id": "3e5a7b4c-2130-4bfa-9dba-bc73d8dc87aa"
+          }
         ],
-        "__section": "text",
-        "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "88118999-ec27-408a-aeac-2cf506ad00fd"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "ded7de21-3a3e-4a8f-a89e-f6e13f0d3520"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair: so If I\nsucceed you will\nlet me into the",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!planet. below\nto find out what\nis going on"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "887f3003-6da4-4ab3-8310-6b9d6e4fd4e9"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "ff340d36-e5fa-46a3-9572-2ccb55703ca8"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-3"
+                        },
+                        "id": "b03336fe-8404-44cc-9b8d-ee445e119946"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:yes to be\nmore specific to\nthe end of the",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!trench without\ngoing above"
+                          ],
+                          "__section": "text",
+                          "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "092b8ef5-81f9-4e47-b666-9f54181f0709"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "576980a1-316e-4533-8fe1-6aeb153649d9"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair: that \nsounds like a\nstrange request",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!but if it is a\nhuman custom\nI accept"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "6c81aaf2-591c-49a0-8ec6-c5dec1bea979"
+                      }
+                    ]
+                  },
+                  "id": "bb8a4f23-2e24-4274-9bc1-a247bea2baa9"
+                }
+              ]
+            },
+            "id": "81dfb04c-f15b-4831-8110-ca7912e4a292"
+          }
+        ]
       },
-      "id": "50e2dab7-047e-403d-9138-2e44642169af"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "f1d58f7f-36f8-4415-812a-4a368456b014"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "blair: that \nsounds like a\nstrange request",
-          "but if it is a\nhuman custom\nI accept"
-        ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "414d6fa8-011c-430a-985c-dc1d7f9c9807"
+      "id": "18e879ad-50e7-4c27-aa42-56226c92f785"
     },
     {
       "command": "EVENT_GROUP",

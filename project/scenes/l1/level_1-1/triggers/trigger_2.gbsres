@@ -11,264 +11,1012 @@
   "height": 15,
   "script": [
     {
-      "command": "EVENT_PALETTE_SET_UI",
+      "command": "EVENT_SWITCH",
       "args": {
-        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "1a759a2d-dc94-43d2-bb85-44ffb54debd6"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.01,
-        "effect": 0
-      },
-      "id": "26a6ce3d-e509-4262-8430-55c2d8ae12c6"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "blair:isn't that\ndad's ship up\nahead"
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "6804ee5a-c6fe-4b08-83a7-e16e7b3b6d0c"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "a5497004-5f87-4c3e-900a-65f6d966495c"
+                }
+              ]
+            },
+            "id": "2a12dfe2-cead-4f95-a880-d42ed0744290"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "e92e1005-b394-44a1-b1d0-5e6e570cedb6"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.01,
+                    "effect": 0
+                  },
+                  "id": "40b2e387-93c3-4a33-8724-99207094cffc"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair:isn't that\ndad's ship up\nahead"
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "73eefb78-30ff-441e-ad8f-31ee787b447a"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 50,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "bc509e14-6d2e-4156-880d-eb8eb16f4684"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!sune: yes he \nsaid he was \ncoming back from",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!a peace summit\nwith earth...\nsomething isn't",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!right. it looks\nlike the ship\nhas no pow--"
+                    ],
+                    "__section": "text",
+                    "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3ac9b8aa-4c40-4330-b763-afeb5c6a1845"
+                },
+                {
+                  "command": "EVENT_ENGINE_FIELD_SET",
+                  "args": {
+                    "engineFieldKey": "shooter_scroll_speed",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "bde6fac7-e75a-4f0e-81cc-566a9f0425e5"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "7250324f-50ae-45ec-8e1b-e6d980fd2ff7"
+                },
+                {
+                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "args": {
+                    "__section": "projectile",
+                    "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+                    "spriteStateId": "",
+                    "actorId": "c4dcec75-6c4d-4e34-963d-e537586f8ac9",
+                    "x": 0,
+                    "y": 0,
+                    "directionType": "direction",
+                    "otherActorId": "$self$",
+                    "direction": "down",
+                    "angle": 0,
+                    "angleVariable": "L0",
+                    "targetActorId": "$self$",
+                    "initialOffset": 0,
+                    "speed": 4,
+                    "animSpeed": 15,
+                    "lifeTime": 1,
+                    "loopAnim": true,
+                    "destroyOnHit": true,
+                    "collisionGroup": "2",
+                    "collisionMask": [
+                      "2"
+                    ]
+                  },
+                  "id": "4d1f8b24-501d-4a8b-ac23-bea495cea641"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "b08fffcc-31b0-4af9-b461-0e9aeb5a81bb"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "841f698c-69bc-474a-8a7a-f288b07f6f68"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "45b1e425-38be-48d5-b6fc-b104ee7bd148"
+                  },
+                  "id": "59593d1a-36c2-4f46-a5d3-07d6ed74bda4"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "b8894699-15c7-4f91-8b18-0d8eabcd5de0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!wind:I just did \na scan of the \nship there are",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!no survivors...\nI'm sorry"
+                    ],
+                    "__section": "text",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "2e9b873b-c1ef-447b-a9e3-dc989044bad2"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 210,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "4bc7473a-137d-4d5d-b98f-c8732cd1f8ed"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "019199d4-d32a-41b3-a7bd-95f67cb05d7c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!lark: I will \ninvestigate the\nship. I think I",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!can handle this \nmyself. go find\nthe killer"
+                    ],
+                    "__section": "text",
+                    "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "c9aa468f-8a45-4639-964f-b8db0582423f"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "3e103fc4-5e70-420a-8732-ee73dedfad3b"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "9fe0f87b-9167-4f17-a1d0-00a27de86d02"
+                }
+              ]
+            },
+            "id": "209bbfeb-c244-45b8-81b5-383aada90182"
+          }
         ],
-        "__section": "layout",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "top",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "4e57b79f-19cc-43d4-ad9c-4e81c05bf1e1"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 50,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "e7657efe-a97f-43d4-b93a-f280f2ab164a"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "sune: yes he \nsaid he was \ncoming back from",
-          "a peace summit\nwith earth...\nsomething isn't",
-          "right. it looks\nlike the ship\nhas no pow--"
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "fed0c6e9-17d3-4891-9eda-2f7c3fb8c7d1"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "a7f73313-2527-4355-bd23-c16906d96a73"
+                }
+              ]
+            },
+            "id": "0c3d555d-d09c-4044-aefe-fc67ff12b131"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "dcb904bf-40c4-4465-b82f-b582454e1304"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.01,
+                    "effect": 0
+                  },
+                  "id": "f2d062f8-e04f-4edc-9b1c-cbdbff7e3d3b"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:isn't that\ndad's ship up\nahead"
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "0da9ed58-f065-4831-8d4e-87725ff0f98a"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 50,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "831a2ac9-20ca-4c19-80ef-403763076303"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!sune: yes he \nsaid he was \ncoming back from",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!a peace summit\nwith earth...\nsomething isn't",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!right. it looks\nlike the ship\nhas no pow--"
+                    ],
+                    "__section": "text",
+                    "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "a54d42de-df2a-448e-aae0-4506709146d5"
+                },
+                {
+                  "command": "EVENT_ENGINE_FIELD_SET",
+                  "args": {
+                    "engineFieldKey": "shooter_scroll_speed",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "44295374-d7fe-405a-804c-bfe5daf492f3"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "72abfbbb-b9d9-4edd-a78a-20691c034d51"
+                },
+                {
+                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "args": {
+                    "__section": "projectile",
+                    "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+                    "spriteStateId": "",
+                    "actorId": "c4dcec75-6c4d-4e34-963d-e537586f8ac9",
+                    "x": 0,
+                    "y": 0,
+                    "directionType": "direction",
+                    "otherActorId": "$self$",
+                    "direction": "down",
+                    "angle": 0,
+                    "angleVariable": "L0",
+                    "targetActorId": "$self$",
+                    "initialOffset": 0,
+                    "speed": 4,
+                    "animSpeed": 15,
+                    "lifeTime": 1,
+                    "loopAnim": true,
+                    "destroyOnHit": true,
+                    "collisionGroup": "2",
+                    "collisionMask": [
+                      "2"
+                    ]
+                  },
+                  "id": "ba3ec36b-30d4-4a34-a3b1-bc8be28ae215"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "7b8f398c-d8b1-4131-af09-74bd978a5d60"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "e9a6beaa-3030-4728-bbad-e8d1d4b6e758"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "45b1e425-38be-48d5-b6fc-b104ee7bd148"
+                  },
+                  "id": "f87fcc6f-0434-4c04-aa4d-a2d59a8504c9"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "9e3c7e6a-01f0-425a-881e-43bcf7db0f23"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!wind:I just did \na scan of the \nship there are",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!no survivors...\nI'm sorry"
+                    ],
+                    "__section": "text",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "c1b06518-cd7e-4b63-bd66-73c7735d5ad8"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 210,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "99a16461-da74-4447-8b03-8fb609fc2637"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "6029d090-6f2c-44a9-a08e-1672b56d10b9"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!lark: I will \ninvestigate the\nship. I think I",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!can handle this \nmyself. go find\nthe killer"
+                    ],
+                    "__section": "text",
+                    "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "7b9fd49f-d72e-4952-a0b4-a26693e75165"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "dbd767a9-c7f8-40dc-94b8-7ae573ffb544"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "a35f909c-8868-49c0-bc4f-6a3120dd99ac"
+                }
+              ]
+            },
+            "id": "6c4b2662-b051-46d3-aa51-315938555035"
+          }
         ],
-        "__section": "layout",
-        "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "4c406420-721a-46f3-8130-007b2a95fe5f"
-    },
-    {
-      "command": "EVENT_ENGINE_FIELD_SET",
-      "args": {
-        "engineFieldKey": "shooter_scroll_speed",
-        "value": {
-          "type": "number",
-          "value": 0
-        }
-      },
-      "id": "80344be0-497b-4dbc-99f9-86d2518400ff"
-    },
-    {
-      "command": "EVENT_SOUND_PLAY_EFFECT",
-      "args": {
-        "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
-        "priority": "medium",
-        "pitch": 4,
-        "frequency": 200,
-        "duration": 0.5,
-        "wait": true,
-        "effect": 0
-      },
-      "id": "a9097576-94d7-47cc-97d9-090502039371"
-    },
-    {
-      "command": "EVENT_LAUNCH_PROJECTILE",
-      "args": {
-        "__section": "projectile",
-        "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
-        "spriteStateId": "",
-        "actorId": "c4dcec75-6c4d-4e34-963d-e537586f8ac9",
-        "x": 0,
-        "y": 0,
-        "directionType": "direction",
-        "otherActorId": "$self$",
-        "direction": "down",
-        "angle": 0,
-        "angleVariable": "L0",
-        "targetActorId": "$self$",
-        "initialOffset": 0,
-        "speed": 4,
-        "animSpeed": 15,
-        "lifeTime": 1,
-        "loopAnim": true,
-        "destroyOnHit": true,
-        "collisionGroup": "2",
-        "collisionMask": [
-          "2"
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "d0f07e93-a1e9-48aa-8566-99f1989db936"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "4027df6b-1aa5-4c06-bbea-23c0152e4260"
+                }
+              ]
+            },
+            "id": "e3bc54a6-919f-4dc7-a482-71eef2e6dbf4"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "0cea583b-0f82-42fa-9511-691605980e53"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.01,
+                    "effect": 0
+                  },
+                  "id": "abdf0ed8-cb4c-4164-98b6-e45ead33616d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:isn't that\ndad's ship up\nahead"
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "c45378c6-10da-4e16-ad7a-3d937a32c15b"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 50,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "dcbfce38-f16a-4a8d-8ab0-7ba5a6ec0163"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!sune: yes he \nsaid he was \ncoming back from",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!a peace summit\nwith earth...\nsomething isn't",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!right. it looks\nlike the ship\nhas no pow--"
+                    ],
+                    "__section": "text",
+                    "avatarId": "58cee318-6927-4c89-9fb2-5c70718374f6",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "a020d922-e4c4-4fc2-b21a-07328ebc7bfa"
+                },
+                {
+                  "command": "EVENT_ENGINE_FIELD_SET",
+                  "args": {
+                    "engineFieldKey": "shooter_scroll_speed",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "3344a7b5-5c58-44ef-8055-6eb024d40d04"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "5e49ee42-6af2-4ca7-912b-377a36699528",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "2c03126e-49a0-49a0-ae95-1321bc7b5449"
+                },
+                {
+                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "args": {
+                    "__section": "projectile",
+                    "spriteSheetId": "6365a4fd-46dd-4445-a5ca-f23bbe51b8d3",
+                    "spriteStateId": "",
+                    "actorId": "c4dcec75-6c4d-4e34-963d-e537586f8ac9",
+                    "x": 0,
+                    "y": 0,
+                    "directionType": "direction",
+                    "otherActorId": "$self$",
+                    "direction": "down",
+                    "angle": 0,
+                    "angleVariable": "L0",
+                    "targetActorId": "$self$",
+                    "initialOffset": 0,
+                    "speed": 4,
+                    "animSpeed": 15,
+                    "lifeTime": 1,
+                    "loopAnim": true,
+                    "destroyOnHit": true,
+                    "collisionGroup": "2",
+                    "collisionMask": [
+                      "2"
+                    ]
+                  },
+                  "id": "ce868b45-20b9-4dd8-aa32-80bcdc025345"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "ee4b5120-e498-49b4-ada0-62469f572ea6"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "883ce71f-0051-4835-8c75-4e8f3bc17de9"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "45b1e425-38be-48d5-b6fc-b104ee7bd148"
+                  },
+                  "id": "91fc6a38-9f62-449f-bf40-7c0d350a39ba"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "153f3385-3976-4ef5-9e63-2d7c88168f9e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!wind:I just did \na scan of the \nship there are",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!no survivors...\nI'm sorry"
+                    ],
+                    "__section": "text",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "ad7c16ba-5eff-47a4-8ace-ca1b894040c6"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 210,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "69705e98-458d-4bde-a7b6-6a44b8ce55b0"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "95539f0a-486f-4dbc-966a-988e18e93b83"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!lark: I will \ninvestigate the\nship. I think I",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!can handle this \nmyself. go find\nthe killer"
+                    ],
+                    "__section": "text",
+                    "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "5c83f724-7db5-496c-8f4d-29e02fdd2adf"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "78d0d3e7-d200-4434-809d-f14055fe698f"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "a0537e4f-0af1-4302-b58c-2f725083e89e"
+                }
+              ]
+            },
+            "id": "f6b399ba-9857-42ca-a64a-bcda8860d565"
+          }
         ]
       },
-      "id": "e1641cd0-a987-44b6-bc32-a6fd531dfb79"
-    },
-    {
-      "command": "EVENT_WAIT",
-      "args": {
-        "time": 0.5,
-        "frames": 30
-      },
-      "id": "3963270e-bb5b-4125-acad-eb8da682da70"
-    },
-    {
-      "command": "EVENT_SOUND_PLAY_EFFECT",
-      "args": {
-        "type": "efe4f198-9a5a-4d67-8152-10e975ee31f4",
-        "priority": "medium",
-        "pitch": 4,
-        "frequency": 200,
-        "duration": 0.5,
-        "wait": true,
-        "effect": 0
-      },
-      "id": "aab13346-4874-4ac9-9df7-c6ae0e4e4cfa"
-    },
-    {
-      "command": "EVENT_ACTOR_DEACTIVATE",
-      "args": {
-        "actorId": "45b1e425-38be-48d5-b6fc-b104ee7bd148"
-      },
-      "id": "7c186ff0-cf12-46dc-9d7a-8fc9807a9017"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 420,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "93eb4c1c-4f34-414a-9072-de1b7bffc5c8"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "wind:I just did \na scan of the \nship there are",
-          "no survivors...\nI'm sorry"
-        ],
-        "__section": "behavior",
-        "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "81a97a8f-b28e-4af9-97aa-e1a9c87e23e4"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 210,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "4dc9a6ab-1122-452f-aba9-f38c13d86ba4"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-bg-3"
-      },
-      "id": "1d86d9b6-0b02-41fb-b1b9-eeb7460f8283"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "lark: I will \ninvestigate the\nship. I think I",
-          "can handle this \nmyself. go find\nthe killer"
-        ],
-        "__section": "behavior",
-        "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "ad0e909f-55b6-4569-9f83-aa1c27b3d71a"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
-      },
-      "id": "7cfd7b2e-0468-4cb9-b0d0-633f27854529"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "803829a9-32f2-4e01-89e8-d3a80932a484"
+      "id": "3d6956b9-7ab1-41f8-9fdd-7fc269944280"
     },
     {
       "command": "EVENT_SET_VALUE",

@@ -3,13 +3,26 @@
   "id": "5696af75-b0ad-49ed-9eee-8e6f624eacb8",
   "_index": 17,
   "name": "L5/outro p1",
-  "backgroundId": "8d27951f-a9e6-4c53-8c4a-abbf594a46b2",
+  "backgroundId": "abaf2444-9828-40f3-8597-962cfeb03b2a",
   "tilesetId": "",
   "width": 20,
   "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [],
-  "spritePaletteIds": [],
+  "paletteIds": [
+    "default-bg-4",
+    null,
+    null,
+    null,
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "1b759232-0f57-4300-8203-91f24e570817",
+    "1eecc69b-d962-49d0-b5cf-b3384c5f0f61",
+    "default-bg-2",
+    "7a50aced-4929-4b78-b02e-a5ee40dd0278",
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
+  ],
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_18",
@@ -49,32 +62,283 @@
       "id": "50445e29-b834-49a8-bbbf-439065dca762"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_SWITCH",
       "args": {
-        "text": [
-          "blair:I didn't \nthink of it at\nthe time but...",
-          "he was right. I \nwas too trusting\nI missed obvious",
-          "issues in \ncharacter. at\nthe time I was",
-          "thinking he was\ntrying to get me\nto hate humanity"
-        ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "182fabf4-6400-411b-9c94-ea5fbe9d38ad"
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "b31fc650-bb2a-4bad-b538-e0df86de583a"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "f3edf4b3-df66-4786-b63a-773d0bff85fd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair:I didn't \nthink of it at\nthe time but...",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!he was right. I \nwas too trusting\nI missed obvious",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!issues in \ncharacter. at\nthe time I was",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!thinking he was\ntrying to get me\nto hate humanity"
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "f23ff5c8-a405-403d-b7b5-e92d990eb131"
+                }
+              ]
+            },
+            "id": "3e56a0be-ddf2-40fc-9e2c-7072b3c10c24"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "57c42d47-938d-4fc5-ae28-587e54b37132"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "d6d7dfe5-3037-44b8-96f3-1e8b24e9de85"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:I didn't\nthink of it at\nthe time but...",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!he was right. I\nwas too trusting\nI missed obvious",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!issues in \ncharacter. at\nthe time I was",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!thinking he was\ntrying to get me\nto hate humanity"
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "1750b089-0a62-4de3-a897-251708fe4495"
+                }
+              ]
+            },
+            "id": "5251bef8-b4b3-4f50-a1cc-032cdbffa6dd"
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "7126fd92-9310-4520-bbeb-b1d1eedd1681"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "21d6dbd8-e21b-4391-8898-18c747485d9d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:I didn't\nthink of it at\nthe time but...",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!he was right. I\nwas too trusting\nI missed obvious",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!issues in \ncharacter. at\nthe time I was",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!thinking he was\ntrying to get me\nto hate humanity"
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "c8b8475c-9645-41fd-ab23-1a2ca2997f22"
+                }
+              ]
+            },
+            "id": "3002deb7-401a-4ef0-ba55-9e9e7a693e40"
+          }
+        ]
+      },
+      "id": "c0dcecde-99cb-46ae-b004-30aa60f1f7d1"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

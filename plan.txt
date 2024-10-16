@@ -2,19 +2,16 @@ level 1-1 the war begins
 level 1-2 journey to Earth
 level 1-3 corrupted spider defense array.
 level 1-4 midpoint satelite
-level 1-5 musical diplomacy(musical level)
+level 1-5 escape from Earth
 
 level 2-1 the true war begins
-level 2-2 low orbit blockade
+level 2-2 low orbit blockade(Attack on Eather)
 level 2-3 journey to Earth again
-level 2-4 shot down(musical level)
+level 2-4 finished diplomacy?
 
-level 3-1 magic lessons I(musical level)
-level 3-2 magic lessons II(musical level)
-level 3-3 magic lessons III(musical level)
-level 3-4 reawakening(musical level)
+level 3-1 shot down
+level 3-2 memory 1
+level 3-3 memory 2
+level 3-4 reawakening+ build up to final battle
 
-level 4-1 REVENGE
-level 4-2 Experimental battleship
-level 4-3 forceful diplomacy(music level)
-level 4-4 Temporal Light(combination music + normal gameplay)
+level 4-1 Temporal Light-final battle

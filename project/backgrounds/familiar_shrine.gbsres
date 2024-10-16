@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "246ff41e-b547-48d3-a8a2-00f7b2187bab",
+  "name": "familiar shrine",
+  "symbol": "bg_familiar_shrine",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "familiar shrine.png",
+  "tileColors": "007+056+00c+05a+009+05c+007+05d+007+05e+004+0512+00!051b+036+05e+036+05e+036+05e+036+051b+00!0512+004+05e+006+05d+00b+036+00e+036+00e+036+007+"
+}

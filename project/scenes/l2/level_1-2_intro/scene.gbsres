@@ -3,15 +3,25 @@
   "id": "e43ad431-ea50-4cc6-b97b-859fddbb5be2",
   "_index": 6,
   "name": "L2/level 1-2 intro",
-  "backgroundId": "8d27951f-a9e6-4c53-8c4a-abbf594a46b2",
+  "backgroundId": "fab3ae1f-16a5-4813-82be-0e34a7231c35",
   "tilesetId": "",
   "width": 20,
   "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [],
+  "paletteIds": [
+    "default-bg-4",
+    null,
+    null,
+    null,
+    "default-bg-4"
+  ],
   "spritePaletteIds": [
     "default-bg-5",
-    "1b759232-0f57-4300-8203-91f24e570817"
+    "1b759232-0f57-4300-8203-91f24e570817",
+    "1eecc69b-d962-49d0-b5cf-b3384c5f0f61",
+    "default-bg-2",
+    "7a50aced-4929-4b78-b02e-a5ee40dd0278",
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
   "collisions": "",
   "autoFadeSpeed": 1,
@@ -27,136 +37,628 @@
       "id": "12730df8-d4cc-45c2-b6f9-00e66110ae8d"
     },
     {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "command": "EVENT_SWITCH",
       "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 390,
-        "duration": 0.03,
-        "effect": 0
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "5da53474-e386-4a37-aab2-daf22f840327"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-bg-4"
-      },
-      "id": "b382ad69-10e6-48b3-8262-b95d23a57b29"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "jem: wait a \nsecond I thought\nyou where the ",
-          "first ruler of \nEather."
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "fd1d3d40-fad0-4bf8-b9d8-de3b6c072895"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "ee15cca6-4bed-42d1-9f3e-34aa9f0c3a24"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 390,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "5da53474-e386-4a37-aab2-daf22f840327"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-4"
+                        },
+                        "id": "b382ad69-10e6-48b3-8262-b95d23a57b29"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!jem: wait a \nsecond I thought\nyou where the ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!first ruler of \nEather."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "5dd31079-7a29-4319-a977-0adc7f7a3e31"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "5b6eb093-c049-4106-9d28-1ebbc590f761"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "fce84627-1730-4860-b810-f78b067d347f"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Blair: that was \nwhat my father\nin law was",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!setting up. so \nEather is no\nlonger a colony",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!but a \nindependent\nnation."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "d5a3ac76-aa79-473c-bea7-5722d28f1d75"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 390,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "6b2c8a3a-ea79-4fba-8c7c-a40346d872c1"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-4"
+                        },
+                        "id": "5f202e4c-3afa-4537-8409-353285925984"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!jem: oh. then\ncontinue."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "ca9f1704-a6da-4ee9-bc39-49c11d849c81"
+                      }
+                    ]
+                  },
+                  "id": "65c2928e-f7ba-4c13-9d9c-b3e8917e37b0"
+                }
+              ]
+            },
+            "id": "a8c00b9b-0b21-45e6-af28-4577b4946aa6"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "5dd31079-7a29-4319-a977-0adc7f7a3e31"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "5b6eb093-c049-4106-9d28-1ebbc590f761"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": ""
-      },
-      "id": "fce84627-1730-4860-b810-f78b067d347f"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Blair: that was \nwhat my father\nin law was",
-          "setting up. so \nEather is no\nlonger a colony",
-          "but a \nindependent\nnation."
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "b782566e-86a6-46fd-bcc2-34d17f848236"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "7db2a272-d6dc-4324-b720-c1d33c9d84d0"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 390,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "c413475c-b952-4ec6-bc6c-901d90894241"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-4"
+                        },
+                        "id": "30d21fc7-cdeb-44d0-9835-ba642d8e60f3"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!jem: wait a \nsecond I thought\nyou where the ",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!first ruler of \nEather."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "b4d57ef3-2490-4e14-a1c9-70bb2cba6844"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "b7c6d03e-f51a-4699-af99-3eaf3b6b5e12"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "55d083a8-f539-498b-8147-abf1a01f9e22"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: that was \nwhat my father\nin law was",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!setting up. so \nEather is no\nlonger a colony",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!but a \nindependent\nnation."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "5fe1e235-d186-437b-b047-4efa8b931e16"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 390,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "b26add05-6145-4de4-996c-97c6aac1637a"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-4"
+                        },
+                        "id": "8c54b42a-37ac-4c6f-834b-eb14e6d07af0"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!jem: oh. then\ncontinue."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "3a66747a-a19e-485b-8618-b373c5e19e03"
+                      }
+                    ]
+                  },
+                  "id": "1f1972f2-43c1-4c1b-aa6e-67f48e905ea1"
+                }
+              ]
+            },
+            "id": "ddb9331b-4a24-43b8-bfbe-720482ddb992"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "c720bdf8-24da-41d1-bc26-3c5ce043f81d"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "9c032609-7026-440e-abe9-73bf210e99bd"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 390,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "6108bfb0-aecd-4b27-9e2c-34cfb90c34bd"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-4"
+                        },
+                        "id": "b3bffdb8-6c50-4f86-bf8c-d61e84ad31fc"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!jem: wait a \nsecond I thought\nyou where the ",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!first ruler of \nEather."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "024438f7-e918-49de-8ad0-20c15f638344"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 520,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "b44c2403-3142-443e-a248-3d33d5bf1dee"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "9cc950d4-039f-4637-952d-81541ac5bb0d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: that was \nwhat my father\nin law was",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!setting up. so \nEather is no\nlonger a colony",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!but a \nindependent\nnation."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "f61ab8ad-fa1d-4569-a4bd-6050c726014d"
+                      },
+                      {
+                        "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                        "args": {
+                          "type": "tone",
+                          "pitch": 4,
+                          "frequency": 390,
+                          "duration": 0.03,
+                          "effect": 0
+                        },
+                        "id": "ebd9906e-7bc0-4389-b7e3-39c4e15b5f79"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "default-bg-4"
+                        },
+                        "id": "cfc173c9-73fb-4779-a349-ea549ffb3616"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!jem: oh. then\ncontinue."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "4a6cd447-86be-407e-a68c-1b60948b4f34"
+                      }
+                    ]
+                  },
+                  "id": "2cc4ab6c-23fb-4e1f-a7d9-2a231c7cbe42"
+                }
+              ]
+            },
+            "id": "e1d03c32-546e-44d6-86ed-072b8abfeebb"
+          }
+        ]
       },
-      "id": "d5a3ac76-aa79-473c-bea7-5722d28f1d75"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 390,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "6b2c8a3a-ea79-4fba-8c7c-a40346d872c1"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-bg-4"
-      },
-      "id": "5f202e4c-3afa-4537-8409-353285925984"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "jem: oh. then\ncontinue."
-        ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "ca9f1704-a6da-4ee9-bc39-49c11d849c81"
+      "id": "21b56158-9116-496e-81b8-5565aaeb3d81"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

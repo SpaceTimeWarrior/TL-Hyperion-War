@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "54fcd56e-556b-46af-86b4-5d8e192627a7",
+  "name": "gbs frame",
+  "symbol": "font_gbs_frame",
+  "width": 3,
+  "height": 3,
+  "imageWidth": 24,
+  "imageHeight": 24,
+  "filename": "gbs frame.png"
+}

@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "16f85952-a842-44f1-9ac6-99c501da2dfe",
+  "name": "frame",
+  "symbol": "tileset_frame",
+  "width": 3,
+  "height": 3,
+  "imageWidth": 24,
+  "imageHeight": 24,
+  "filename": "frame.png"
+}

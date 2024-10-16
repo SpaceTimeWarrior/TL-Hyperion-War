@@ -11,14 +11,24 @@
   "paletteIds": [],
   "spritePaletteIds": [
     "da9b688a-cb2c-41c1-8426-7ce7e65e3418",
-    "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+    "da9b688a-cb2c-41c1-8426-7ce7e65e3418",
+    "default-bg-2",
+    null,
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_15",
-  "x": 224,
+  "x": 200,
   "y": 1104,
   "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "952657de-9a40-49ae-8780-39c22752a689"
+    },
     {
       "command": "EVENT_TEXT_SET_SOUND_EFFECT",
       "args": {
@@ -31,113 +41,559 @@
       "id": "d97f7cbe-06fb-49b1-a543-0927412f64cf"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_SWITCH",
       "args": {
-        "text": [
-          "blair:mom is\nthat you"
-        ],
-        "__section": "behavior",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "top",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 1,
-        "closeDelayFrames": 30
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "2dd2bc15-abc8-4135-8474-667bffff6a03"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "kit: yes I have \nsince put the \nshrine on hold.",
-          "after your \nfather in law \nhad made Eather ",
-          "a independent \nplanet a group \nthat is well ",
-          "known for \nhating monsters \nhave started ",
-          "genocide. the \nonly reason why \nI am immune is ",
-          "because I am an \nambassador\nbut after I let ",
-          "you go you have \nto get to Eather",
-          "did your father \nin law make...\noh my."
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "3e6a8b53-1ba7-4d01-bbdd-f19a8d7167e3"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "720a2fbb-1616-41eb-be2a-488f809eb6bd"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair:mom is\nthat you"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "2dd2bc15-abc8-4135-8474-667bffff6a03"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!kit: yes I have \nsince put the \nshrine on hold.",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!after your \nfather in law \nhad made Eather ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!a independent \nplanet a group \nthat is well ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!known for \nhating monsters \nhave started ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!genocide. the \nonly reason why \nI am immune is ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!because I am an \nambassador\nbut after I let ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!you go you have \nto get to Eather",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!did your father \nin law make...\noh my."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "d2f40ff9-2c0e-4bf3-a673-e6e603c30f85"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair:no he \ndidn't..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "f4d513bc-160d-455e-8d54-f9a38d6751ca"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!kit:... ... get \ngoing. I still\nhave a few",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!things I got to\ndo otherwise it\nwould look",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!very suspicious.\ngood luck"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "03b555f6-a419-49cb-9625-af18f2e6106b"
+                      }
+                    ]
+                  },
+                  "id": "5f489133-5667-4e72-8dc4-7a14c5acea87"
+                }
+              ]
+            },
+            "id": "4d2a237c-b67e-4351-8de9-132c2d281269"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 1,
-        "closeDelayFrames": 30
-      },
-      "id": "d2f40ff9-2c0e-4bf3-a673-e6e603c30f85"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "blair:no he \ndidn't..."
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "dce7df53-70b9-4dd6-a924-51459a0d7f38"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "900dc46a-5607-4c0c-a67b-2d061f21f74f"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:mom is\nthat you"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "974910f6-2ac3-473b-8846-3ffc0c23f23b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!kit: yes I have\nsince put the\nshrine on hold.",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!after your\nfather in law\nhad made Eather",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!a independent\nplanet a group\nthat is well",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!known for\nhating monsters\nhave started",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!genocide. the\nonly reason why\nI am immune is",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!because I am an\nambassador\nbut after I let",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!you go you have \nto get to Eather",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!did your father \nin law make...\noh my."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "ab0eeea7-9d00-4585-8ecf-bb89e15109d8"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:no he \ndidn't..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "7f2ce750-3e14-4724-8d6c-4608ad83c989"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!kit:... ... get\ngoing. I still\nhave a few",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!things I got to\ndo otherwise it\nwould look",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!very suspicious.\ngood luck"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "0ac2a509-bd9f-49b6-965a-302783a46fe4"
+                      }
+                    ]
+                  },
+                  "id": "c88bb66c-1b7a-44bf-a9c1-21e7e7e3c512"
+                }
+              ]
+            },
+            "id": "8c6599c8-0c81-45b7-ae96-883d71dc4916"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "top",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 1,
-        "closeDelayFrames": 30
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "5f2e00b2-9ee8-416b-bfef-1bea955e2461"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "c2bba112-c580-447b-9abf-cc279033a56e"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:mom is\nthat you"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "c7a80283-cf4d-4690-86fa-f79748d25827"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!kit: yes I have\nsince put the\nshrine on hold.",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!after your\nfather in law\nhad made Eather",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!a independent\nplanet a group\nthat is well",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!known for\nhating monsters\nhave started",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!genocide. the\nonly reason why\nI am immune is",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!because I am an\nambassador\nbut after I let",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!you go you have \nto get to Eather",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!did your father \nin law make...\noh my."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "64af6ffb-7f41-43d9-9a2b-37dd6db51413"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:no he \ndidn't..."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "top",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 1,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "9727c098-7514-47d0-8a8a-68c3772f5896"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!kit:... ... get\ngoing. I still\nhave a few",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!things I got to\ndo otherwise it\nwould look",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!very suspicious.\ngood luck"
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "f0ae6fff-4788-4d9b-b44e-8412bd288c77"
+                      }
+                    ]
+                  },
+                  "id": "bf6ebf94-b06e-43a3-803e-f76a252dc743"
+                }
+              ]
+            },
+            "id": "b7eb582a-c76a-4e2e-9733-02b0da36ba35"
+          }
+        ]
       },
-      "id": "f4d513bc-160d-455e-8d54-f9a38d6751ca"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "kit:... ... get \ngoing. I still\nhave a few",
-          "things I got to\ndo otherwise it\nwould look",
-          "very suspicious.\ngood luck"
-        ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "03b555f6-a419-49cb-9625-af18f2e6106b"
+      "id": "c7c2b231-b99b-4254-88ee-6394eace17da"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

@@ -3,10 +3,10 @@
   "id": "7326b861-54b4-442b-bdde-aa4922facf69",
   "name": "jem",
   "symbol": "sprite_jem",
-  "numFrames": 1,
+  "numFrames": 2,
   "filename": "jem.png",
-  "checksum": "a033b7eae3086af88f5120425419d544303d99c2",
-  "width": 16,
+  "checksum": "83b5ae7edf231805ab56cbdd72c52baba90a0fc3",
+  "width": 32,
   "height": 32,
   "states": [
     {
@@ -71,6 +71,45 @@
                   "flipY": false,
                   "objPalette": "OBP1",
                   "paletteIndex": 1,
+                  "priority": false
+                },
+                {
+                  "id": "909af1bd-92d4-4618-b646-36c1ec7f3d24",
+                  "x": 0,
+                  "y": 8,
+                  "sliceX": 16,
+                  "sliceY": 8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP1",
+                  "paletteIndex": 2,
+                  "priority": false
+                },
+                {
+                  "id": "7bbf11f8-9670-4ecf-9bca-857b95ed6dca",
+                  "x": 8,
+                  "y": 16,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 4,
+                  "priority": false
+                },
+                {
+                  "id": "23bd0efc-3643-4b38-84e7-41ec347f2fbc",
+                  "x": 8,
+                  "y": 8,
+                  "sliceX": 24,
+                  "sliceY": 8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP1",
+                  "paletteIndex": 2,
                   "priority": false
                 }
               ]
@@ -143,7 +182,7 @@
       ]
     }
   ],
-  "numTiles": 4,
+  "numTiles": 6,
   "canvasWidth": 32,
   "canvasHeight": 32,
   "boundsX": 0,

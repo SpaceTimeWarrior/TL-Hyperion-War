@@ -3,22 +3,39 @@
   "id": "a8270c83-a071-4508-9303-c68093a6f3ab",
   "_index": 11,
   "name": "L4/level 1-4 intro",
-  "backgroundId": "8d27951f-a9e6-4c53-8c4a-abbf594a46b2",
+  "backgroundId": "26c6ba9e-fe31-4aa8-aedb-54b629a9e3c6",
   "tilesetId": "",
   "width": 20,
   "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [],
+  "paletteIds": [
+    "default-bg-4",
+    null,
+    null,
+    null,
+    "default-bg-4"
+  ],
   "spritePaletteIds": [
     "default-bg-5",
-    "1b759232-0f57-4300-8203-91f24e570817"
+    "1b759232-0f57-4300-8203-91f24e570817",
+    "1eecc69b-d962-49d0-b5cf-b3384c5f0f61",
+    "default-bg-2",
+    "7a50aced-4929-4b78-b02e-a5ee40dd0278",
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_12",
-  "x": 200,
-  "y": 936,
+  "x": 192,
+  "y": 928,
   "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "a6255af0-9ccf-426e-94dd-6528058ab349"
+    },
     {
       "command": "EVENT_PALETTE_SET_UI",
       "args": {
@@ -38,32 +55,310 @@
       "id": "ebfb41fc-cbed-4fc5-b0ba-50cb1381e1d6"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_SWITCH",
       "args": {
-        "text": [
-          "blair:the next 2\nmonths where \nmostly",
-          "uneventful\nand very boring\nuntil I reached",
-          "the earth's moon\nand when I\nbrought up",
-          "diplomacy the \nbrought a army."
-        ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "f5a3a494-680d-430b-91bf-ab475a744dd7"
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "c16e714b-ffd0-4c19-b7d0-88a22eed9f9e"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "00ac103c-4c87-4d2f-84ce-dbe86d29161d"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {},
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair:the next 2\nmonths where \nmostly",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!uneventful\nand very boring\nuntil I reached",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!the earth's moon\nand when I\nbrought up",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!diplomacy the \nbrought a army."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "f5a3a494-680d-430b-91bf-ab475a744dd7"
+                      }
+                    ]
+                  },
+                  "id": "bb541731-275b-444f-98f8-aa18ff9afdf5"
+                }
+              ]
+            },
+            "id": "e5e3dc4f-e436-4704-8db8-134f0573f22d"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "a7f1a61f-1e68-4ce4-8599-3eb9c4adad35"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "e4c58eb4-f2ce-40fc-9301-67a6e164d7fa"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {},
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:the next 2\nmonths where \nmostly",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!uneventful\nand very boring\nuntil I reached",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!the earth's moon\nand when I\nbrought up",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!diplomacy the \nbrought a army."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "e196efee-9a51-4e7c-a15f-c62750d66223"
+                      }
+                    ]
+                  },
+                  "id": "741ef1b4-8d9f-4d09-88b8-edc3f6daf084"
+                }
+              ]
+            },
+            "id": "1f9f668b-21c4-4c0b-a6f0-96d60b375994"
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "e05409aa-d322-40c8-a0b3-89204a4c3a18"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "436348df-9f03-4883-933a-60fee0066335"
+                },
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {},
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!blair:the next 2\nmonths where \nmostly",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!uneventful\nand very boring\nuntil I reached",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!the earth's moon\nand when I\nbrought up",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!diplomacy the \nbrought a army."
+                          ],
+                          "__section": "text",
+                          "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "4bc8ffb0-2041-4c59-ab81-2618fb6afe81"
+                      }
+                    ]
+                  },
+                  "id": "812f677d-26fd-499b-be2a-f79c18fad137"
+                }
+              ]
+            },
+            "id": "8b0fec37-e306-4368-83f2-45f7d52ba48c"
+          }
+        ]
+      },
+      "id": "2fc6f247-a5d2-4cc9-b253-dbd5c27d4ac6"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

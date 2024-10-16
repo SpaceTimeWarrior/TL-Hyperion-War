@@ -42,7 +42,8 @@
             "value": 8
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -71,7 +72,8 @@
           "type": "variable",
           "value": "V3"
         },
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -7663,7 +7665,8 @@
         "value": {
           "type": "variable",
           "value": "0"
-        }
+        },
+        "__collapse": true
       },
       "id": "23ed28aa-fe1c-4f43-bb19-ad0f5d4f72a6"
     },
@@ -7674,7 +7677,8 @@
         "value": {
           "type": "variable",
           "value": "1"
-        }
+        },
+        "__collapse": true
       },
       "id": "3c431c00-5483-4f67-8c27-1e34adf09af0"
     },
@@ -7685,7 +7689,8 @@
         "value": {
           "type": "variable",
           "value": "2"
-        }
+        },
+        "__collapse": true
       },
       "id": "fcb57c21-185b-42cd-bdcc-cae118c16192"
     },
@@ -7696,7 +7701,8 @@
         "value": {
           "type": "variable",
           "value": "6"
-        }
+        },
+        "__collapse": true
       },
       "id": "07c06845-87b7-4ce4-b9f8-2b228df60eb6"
     }
