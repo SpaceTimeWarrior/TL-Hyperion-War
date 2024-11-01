@@ -13,8 +13,8 @@
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_47",
-  "x": 424,
-  "y": 3008,
+  "x": 416,
+  "y": 4272,
   "script": [
     {
       "command": "EVENT_GROUP",

@@ -2,25 +2,24 @@
   "_resourceType": "scene",
   "id": "6fe5925f-a599-4e89-934d-e476ae320c81",
   "_index": 14,
+  "type": "TOPDOWN",
   "name": "L5/level 1-5 intro",
-  "backgroundId": "69302fd2-c9b9-418e-a5e3-ddadd1e07ac8",
-  "tilesetId": "",
+  "symbol": "scene_15",
+  "x": 200,
+  "y": 1104,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "69302fd2-c9b9-418e-a5e3-ddadd1e07ac8",
+  "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [
     "da9b688a-cb2c-41c1-8426-7ce7e65e3418",
     "da9b688a-cb2c-41c1-8426-7ce7e65e3418",
     "default-bg-2",
-    null,
+    "",
     "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
-  "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_15",
-  "x": 200,
-  "y": 1104,
   "script": [
     {
       "command": "EVENT_ACTOR_HIDE",
@@ -134,7 +133,7 @@
                           "text": [
                             "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!blair:mom is\nthat you"
                           ],
-                          "__section": "text",
+                          "__section": "layout",
                           "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
                           "minHeight": 4,
                           "maxHeight": 7,
@@ -615,5 +614,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": ""
 }

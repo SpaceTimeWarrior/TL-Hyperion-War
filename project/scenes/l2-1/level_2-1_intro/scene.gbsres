@@ -82,6 +82,24 @@
       "id": "a28e5f07-d368-44b6-8ea2-d2361f741aad"
     },
     {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+      },
+      "id": "e537067e-b103-4359-a753-244d29677bf6"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 520,
+        "duration": 0.03,
+        "effect": 0
+      },
+      "id": "14301834-13cc-4dab-8217-cb8105f379a8"
+    },
+    {
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "22",
@@ -170,14 +188,14 @@
                       "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!on anybody...\nlets start where\nI left off.",
                       "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!and so the war\nstarted"
                     ],
-                    "__section": "text",
+                    "__section": "layout",
                     "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
                     "minHeight": 4,
                     "maxHeight": 7,
                     "textX": 1,
                     "textY": 1,
                     "textHeight": 5,
-                    "position": "bottom",
+                    "position": "top",
                     "clearPrevious": true,
                     "showFrame": "true",
                     "speedIn": -1,

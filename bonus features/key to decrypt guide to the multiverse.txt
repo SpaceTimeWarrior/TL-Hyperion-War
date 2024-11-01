@@ -1,0 +1,7 @@
+a cipher that was named after a well known person and a salad
+	6 ascii characters to alphabatize then remove all characters before L
+for a n64 base game.
+then remove any non -. / characters this is to trim the game to size
+then manage the dots and dashes to recreate the data
+
+WlJlTVNlUEtT

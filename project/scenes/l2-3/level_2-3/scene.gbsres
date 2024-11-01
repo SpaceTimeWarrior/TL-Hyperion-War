@@ -5,8 +5,8 @@
   "type": "SHMUP",
   "name": "L2-3/Level 2-3",
   "symbol": "scene_26",
-  "x": 392,
-  "y": 1656,
+  "x": 400,
+  "y": 1832,
   "width": 255,
   "height": 18,
   "backgroundId": "c800b4cc-0145-4e82-b0ae-5c33c4ce411a",
@@ -21,7 +21,8 @@
   "spritePaletteIds": [
     "default-ui",
     "9e0ce806-cd5d-4f8c-89a0-bbab5ca8e910",
-    "d8ff2d0a-0648-438e-a6b8-a6fa9e3289f6"
+    "1b759232-0f57-4300-8203-91f24e570817",
+    "e2b56506-3979-48aa-800d-0d75ea84cf75"
   ],
   "autoFadeSpeed": 1,
   "script": [

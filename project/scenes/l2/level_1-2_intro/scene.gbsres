@@ -2,17 +2,20 @@
   "_resourceType": "scene",
   "id": "e43ad431-ea50-4cc6-b97b-859fddbb5be2",
   "_index": 6,
+  "type": "TOPDOWN",
   "name": "L2/level 1-2 intro",
-  "backgroundId": "fab3ae1f-16a5-4813-82be-0e34a7231c35",
-  "tilesetId": "",
+  "symbol": "scene_7",
+  "x": 192,
+  "y": 576,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "fab3ae1f-16a5-4813-82be-0e34a7231c35",
+  "tilesetId": "",
   "paletteIds": [
     "default-bg-4",
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "default-bg-4"
   ],
   "spritePaletteIds": [
@@ -23,11 +26,7 @@
     "7a50aced-4929-4b78-b02e-a5ee40dd0278",
     "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
-  "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_7",
-  "x": 192,
-  "y": 576,
   "script": [
     {
       "command": "EVENT_ACTOR_HIDE",
@@ -680,5 +679,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": ""
 }

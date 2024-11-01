@@ -2,17 +2,20 @@
   "_resourceType": "scene",
   "id": "5696af75-b0ad-49ed-9eee-8e6f624eacb8",
   "_index": 17,
+  "type": "TOPDOWN",
   "name": "L5/outro p1",
-  "backgroundId": "abaf2444-9828-40f3-8597-962cfeb03b2a",
-  "tilesetId": "",
+  "symbol": "scene_18",
+  "x": 2440,
+  "y": 1104,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "abaf2444-9828-40f3-8597-962cfeb03b2a",
+  "tilesetId": "",
   "paletteIds": [
     "default-bg-4",
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "default-bg-4"
   ],
   "spritePaletteIds": [
@@ -23,11 +26,7 @@
     "7a50aced-4929-4b78-b02e-a5ee40dd0278",
     "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
-  "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_18",
-  "x": 2440,
-  "y": 1104,
   "script": [
     {
       "command": "EVENT_ACTOR_DEACTIVATE",
@@ -360,5 +359,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": ""
 }

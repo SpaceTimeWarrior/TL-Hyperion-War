@@ -152,7 +152,7 @@
                       {
                         "command": "EVENT_GROUP",
                         "args": {
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -208,7 +208,7 @@
                                 "__collapseCase15": false,
                                 "value15": 16,
                                 "__collapseElse": false,
-                                "__collapse": false
+                                "__collapse": true
                               },
                               "children": {
                                 "true0": [
@@ -803,50 +803,6 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_TEXT",
-                                    "args": {
-                                      "text": [
-                                        "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!since this demo \nonly has 5 levels",
-                                        "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!we are continuing \nto the title \nscreen"
-                                      ],
-                                      "__section": "text",
-                                      "avatarId": "",
-                                      "minHeight": 4,
-                                      "maxHeight": 7,
-                                      "textX": 1,
-                                      "textY": 1,
-                                      "textHeight": 5,
-                                      "position": "bottom",
-                                      "clearPrevious": true,
-                                      "showFrame": "true",
-                                      "speedIn": -1,
-                                      "speedOut": -1,
-                                      "closeWhen": "text",
-                                      "closeButton": "a",
-                                      "closeDelayTime": 0.5,
-                                      "closeDelayFrames": 30,
-                                      "__comment": false
-                                    },
-                                    "id": "d959c1a7-e35e-475b-8d0d-121526ef9627"
-                                  },
-                                  {
-                                    "command": "EVENT_SWITCH_SCENE",
-                                    "args": {
-                                      "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
-                                      "x": {
-                                        "type": "number",
-                                        "value": 0
-                                      },
-                                      "y": {
-                                        "type": "number",
-                                        "value": 0
-                                      },
-                                      "direction": "",
-                                      "fadeSpeed": "2"
-                                    },
-                                    "id": "8e193825-3933-4fe6-b6a8-36baeff89108"
-                                  },
-                                  {
                                     "command": "EVENT_SWITCH_SCENE",
                                     "args": {
                                       "sceneId": "cbde9619-59c7-49ec-b4d1-436fbb89a1bf",
@@ -860,7 +816,7 @@
                                       },
                                       "direction": "",
                                       "fadeSpeed": "2",
-                                      "__comment": true
+                                      "__comment": false
                                     },
                                     "id": "09bcc31c-809b-44a3-b3a5-24ae298ea1bc"
                                   }
@@ -936,7 +892,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -1312,7 +1268,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -1587,36 +1543,9 @@
                         "children": {
                           "true": [
                             {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!since this demo \nonly has 5 levels",
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!we are continuing \nto the title \nscreen"
-                                ],
-                                "__section": "text",
-                                "avatarId": "",
-                                "minHeight": 4,
-                                "maxHeight": 7,
-                                "textX": 1,
-                                "textY": 1,
-                                "textHeight": 5,
-                                "position": "bottom",
-                                "clearPrevious": true,
-                                "showFrame": "true",
-                                "speedIn": -1,
-                                "speedOut": -1,
-                                "closeWhen": "text",
-                                "closeButton": "a",
-                                "closeDelayTime": 0.5,
-                                "closeDelayFrames": 30,
-                                "__comment": false
-                              },
-                              "id": "deef8ae9-4cb8-4590-89e3-7464a811cd1d"
-                            },
-                            {
                               "command": "EVENT_SWITCH_SCENE",
                               "args": {
-                                "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
+                                "sceneId": "cbde9619-59c7-49ec-b4d1-436fbb89a1bf",
                                 "x": {
                                   "type": "number",
                                   "value": 0
@@ -1730,7 +1659,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -2106,7 +2035,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -2381,33 +2310,6 @@
                         "children": {
                           "true": [
                             {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!since this demo \nonly has 5 levels",
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!we are continuing \nto the title \nscreen"
-                                ],
-                                "__section": "text",
-                                "avatarId": "",
-                                "minHeight": 4,
-                                "maxHeight": 7,
-                                "textX": 1,
-                                "textY": 1,
-                                "textHeight": 5,
-                                "position": "bottom",
-                                "clearPrevious": true,
-                                "showFrame": "true",
-                                "speedIn": -1,
-                                "speedOut": -1,
-                                "closeWhen": "text",
-                                "closeButton": "a",
-                                "closeDelayTime": 0.5,
-                                "closeDelayFrames": 30,
-                                "__comment": false
-                              },
-                              "id": "6e3874d1-9f60-4438-91fd-b91dc83a0498"
-                            },
-                            {
                               "command": "EVENT_SWITCH_SCENE",
                               "args": {
                                 "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
@@ -2420,7 +2322,8 @@
                                   "value": 0
                                 },
                                 "direction": "",
-                                "fadeSpeed": "2"
+                                "fadeSpeed": "2",
+                                "__comment": true
                               },
                               "id": "fb7b5109-34f0-4f70-8c5a-60630270279b"
                             },
@@ -2438,7 +2341,7 @@
                                 },
                                 "direction": "",
                                 "fadeSpeed": "2",
-                                "__comment": true
+                                "__comment": false
                               },
                               "id": "a9e56c54-acbd-4e0d-bc74-c807aa2a304b"
                             }

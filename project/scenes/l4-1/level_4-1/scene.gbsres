@@ -2,19 +2,19 @@
   "_resourceType": "scene",
   "id": "9b554fae-268e-4941-8e38-bc73397ccc4b",
   "_index": 43,
-  "name": "Level 4-1",
-  "backgroundId": "5382612f-59b9-4bee-ad51-d901281d96d4",
+  "name": "L4-1/Level 4-1",
+  "backgroundId": "a76072f1-ad4f-4efe-8ea8-3a805a46a3c2",
   "tilesetId": "",
   "width": 255,
   "height": 18,
   "type": "SHMUP",
   "paletteIds": [],
   "spritePaletteIds": [],
-  "collisions": "00ef1+0f2fd+",
+  "collisions": "0f100+002+0ffc+004+0ffb+00e7+0f2+008f5+0f2+0019+0ffc+002+0f3fa+",
   "autoFadeSpeed": 1,
   "symbol": "scene_44",
-  "x": 400,
-  "y": 2816,
+  "x": 408,
+  "y": 3888,
   "script": [
     {
       "command": "EVENT_GROUP",
@@ -24,7 +24,7 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": true,
+              "__collapse": false,
               "__label": "boot up script"
             },
             "children": {
@@ -316,7 +316,7 @@
                                         }
                                       },
                                       "__collapseElse": true,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -475,6 +475,39 @@
                               "id": "33ad21e6-dd3b-46c6-ae5a-01c413c4c7c9"
                             },
                             {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "0",
+                                "value": {
+                                  "type": "number",
+                                  "value": 999
+                                }
+                              },
+                              "id": "7df6f05d-bb4a-4b11-b3c6-d49c886b5eab"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "2",
+                                "value": {
+                                  "type": "number",
+                                  "value": 999
+                                }
+                              },
+                              "id": "10a707bf-655b-44e8-97cd-33fb9eef9dd0"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "1",
+                                "value": {
+                                  "type": "number",
+                                  "value": 999
+                                }
+                              },
+                              "id": "a9ad2c82-7764-4e65-bde5-9660f687d369"
+                            },
+                            {
                               "command": "EVENT_THREAD_STOP",
                               "args": {
                                 "variable": "T0"
@@ -507,7 +540,7 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": true,
+              "__collapse": false,
               "__label": "setup for level"
             },
             "children": {
@@ -580,5 +613,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7326b861-54b4-442b-bdde-aa4922facf69"
 }

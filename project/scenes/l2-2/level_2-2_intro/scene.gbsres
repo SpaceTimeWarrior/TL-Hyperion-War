@@ -2,16 +2,19 @@
   "_resourceType": "scene",
   "id": "2ee14454-0527-4ded-94db-a79d324839fa",
   "_index": 21,
+  "type": "TOPDOWN",
   "name": "L2-2/Level 2-2 intro",
-  "backgroundId": "246ff41e-b547-48d3-a8a2-00f7b2187bab",
-  "tilesetId": "",
+  "symbol": "scene_22",
+  "x": 200,
+  "y": 1456,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "246ff41e-b547-48d3-a8a2-00f7b2187bab",
+  "tilesetId": "",
   "paletteIds": [
     "0665f342-51c1-4e45-bf33-0b57c697f995",
-    null,
-    null,
+    "",
+    "",
     "02bcfacf-e946-4bd7-98ad-21a69e2105ca"
   ],
   "spritePaletteIds": [
@@ -22,11 +25,7 @@
     "7a50aced-4929-4b78-b02e-a5ee40dd0278",
     "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
-  "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_22",
-  "x": 200,
-  "y": 1480,
   "script": [
     {
       "command": "EVENT_ACTOR_HIDE",
@@ -34,6 +33,507 @@
         "actorId": "$self$"
       },
       "id": "a319a533-6636-4142-a897-0e916780b62d"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "8d539424-e54f-49c1-9cbc-1ab369aa1826"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "0880201a-36e9-467b-9b61-5f66d0192932"
+                }
+              ]
+            },
+            "id": "9ab41706-99cb-4526-8313-998bab400471"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-4"
+                  },
+                  "id": "b913e78b-2164-4b3d-84cd-7e1053f039fa"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "da00c0ca-fdd7-4841-a0a8-554eb0a82d4d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!jem:why couldn't\nyou of gone with\nFire."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "d4cd1c0e-9ded-4842-9e76-290be484b859"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "3580aaa6-f110-42de-bcdd-322e53fab9d8"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "a7c498f2-d474-43ad-9377-c4742adacb06"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Blair: back then\nevery monster\nsubrace had",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!their own \nreligion. \nthankfully ",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I was trained in\nthat. kitsunes\nhad a similar ",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!religion to that\nof the werewolf\nreligion. I had",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!to act as a \nshrine maiden\nfor the funeral.",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I did eventually\ncatch up to her."
+                    ],
+                    "__section": "layout",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "d5fd73f3-6674-4b94-b4a1-56e7d3e901c8"
+                }
+              ]
+            },
+            "id": "8d5c0770-bbe7-4106-bdbf-0f079cf89985"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "6be8e682-7e80-4b2a-8fa6-8a5571a45168"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "86e59ba2-356c-46ad-93b1-96e11782e50b"
+                }
+              ]
+            },
+            "id": "f46de715-8211-48da-b9d3-e43efd053115"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-4"
+                  },
+                  "id": "2e4bfcf4-fa32-412a-a214-b69f818ac379"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "486fd196-b3ab-436a-b142-fead8a6d96d2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!jem:why couldn't\nyou of gone with\nFire."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "a01c9b28-3e91-4123-869b-94a5101d7e3b"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "f3a22d37-cae4-4f01-ac94-f5da01760017"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "8286536c-eed1-4cc6-afc8-9d0f6f799697"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: back then\nevery monster\nsubrace had",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!their own \nreligion. \nthankfully ",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!I was trained in\nthat. kitsunes\nhad a similar ",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!religion to that\nof the werewolf\nreligion. I had",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!to act as a \nshrine maiden\nfor the funeral.",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!I did eventually\ncatch up to her."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "918ccdb5-3446-4c8e-9865-81e07ab6a068"
+                }
+              ]
+            },
+            "id": "071e5991-f2e9-4a42-948f-8b1d207d9e08"
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "e6239953-4df6-4f23-997e-9db04b3b71a0"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "732bf2a5-28b0-4b85-a48a-89af2ae93b81"
+                }
+              ]
+            },
+            "id": "cb9fcca4-c44e-42fe-ae78-2450fb705d55"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-4"
+                  },
+                  "id": "cd0481d9-e09c-450a-b012-30fbb981c149"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "7363e5f1-a6b5-4685-9663-7bdeac3de268"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!jem:why couldn't\nyou of gone with\nFire."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "f3e37322-d3fa-4887-9697-8007aacfd9ab"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "9ab2059f-8b75-4b9f-9ff4-38fdd4d938a7"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "cdbcef67-f74f-4838-bbc7-49ae2cd60641"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: back then\nevery monster\nsubrace had",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!their own \nreligion. \nthankfully ",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!I was trained in\nthat. kitsunes\nhad a similar ",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!religion to that\nof the werewolf\nreligion. I had",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!to act as a \nshrine maiden\nfor the funeral.",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!I did eventually\ncatch up to her."
+                    ],
+                    "__section": "text",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "14366f85-6a30-420e-9316-198ece88044d"
+                }
+              ]
+            },
+            "id": "9fa8a0c6-6173-4b53-8e8a-7f900963d00b"
+          }
+        ]
+      },
+      "id": "4d21f6d4-3ba5-4be5-a26d-91b49a2d012b"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
@@ -55,5 +555,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": ""
 }

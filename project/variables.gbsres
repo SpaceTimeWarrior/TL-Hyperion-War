@@ -137,6 +137,16 @@
       "symbol": "var_level_score"
     },
     {
+      "id": "27",
+      "name": "boost active",
+      "symbol": "var_boost_active"
+    },
+    {
+      "id": "28",
+      "name": "fire_damage",
+      "symbol": "var_fire_damage"
+    },
+    {
       "id": "4f8924a2-6f49-4c99-8471-c476f9b7a2bb__L0",
       "name": "Local 0",
       "symbol": "var_local_1"
@@ -157,9 +167,9 @@
       "symbol": "var_local_4"
     },
     {
-      "id": "27",
-      "name": "boost active",
-      "symbol": "var_boost_active"
+      "id": "7e5cbb0c-da62-4ff2-b7dd-3adc57813317__L0",
+      "name": "Local 0",
+      "symbol": "var_local_3"
     }
   ]
 }

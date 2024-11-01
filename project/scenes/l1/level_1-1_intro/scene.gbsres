@@ -444,14 +444,14 @@
         },
         "direction": "right",
         "fadeSpeed": "2",
-        "__comment": false
+        "__comment": true
       },
       "id": "d985549f-fb62-4f8d-8bc6-94d61ac481df"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "sceneId": "cbde9619-59c7-49ec-b4d1-436fbb89a1bf",
+        "sceneId": "2ee14454-0527-4ded-94db-a79d324839fa",
         "x": {
           "type": "number",
           "value": 0
@@ -465,6 +465,24 @@
         "__comment": true
       },
       "id": "21704d8f-ef62-49cf-b0e9-4fa905f93fff"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4e24af1a-43f4-447d-9011-9dde12909030",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "right",
+        "fadeSpeed": "2",
+        "__comment": false
+      },
+      "id": "5d66c86d-ac77-4060-8c8d-1ff0f085df05"
     }
   ],
   "playerHit1Script": [],

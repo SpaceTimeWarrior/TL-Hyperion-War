@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "94e33a24-0b54-4d44-9886-89987b318a09",
+  "name": "stars level intro",
+  "symbol": "bg_stars_level_intro",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "stars level intro.png",
+  "tileColors": "04168+",
+  "autoColor": false
+}

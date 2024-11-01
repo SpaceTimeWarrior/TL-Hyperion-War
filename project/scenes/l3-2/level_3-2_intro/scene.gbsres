@@ -2,19 +2,25 @@
   "_resourceType": "scene",
   "id": "353727a0-7ff1-489a-a081-96f9f905e2cb",
   "_index": 33,
+  "type": "TOPDOWN",
   "name": "L3-2/Level 3-2 intro",
-  "backgroundId": "a2af11e9-e36d-4e17-b4ee-4dd2233b7aa3",
-  "tilesetId": "",
+  "symbol": "scene_34",
+  "x": 60,
+  "y": 2792,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "96d75059-f38e-4804-a2a8-5e0eb02967f1",
+  "tilesetId": "",
   "paletteIds": [],
-  "spritePaletteIds": [],
-  "collisions": "",
+  "spritePaletteIds": [
+    "",
+    "da9b688a-cb2c-41c1-8426-7ce7e65e3418",
+    "",
+    "default-bg-2",
+    "9e0ce806-cd5d-4f8c-89a0-bbab5ca8e910",
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
+  ],
   "autoFadeSpeed": 1,
-  "symbol": "scene_34",
-  "x": 184,
-  "y": 2224,
   "script": [
     {
       "command": "EVENT_SET_VALUE",
@@ -30,5 +36,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": ""
 }

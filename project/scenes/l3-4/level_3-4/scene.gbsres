@@ -2,19 +2,24 @@
   "_resourceType": "scene",
   "id": "36a689a8-7056-4eea-9412-bd83d8afa557",
   "_index": 40,
-  "name": "L3-4/Level 3-4",
-  "backgroundId": "a2af11e9-e36d-4e17-b4ee-4dd2233b7aa3",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "SHMUP",
-  "paletteIds": [],
-  "spritePaletteIds": [],
-  "collisions": "",
-  "autoFadeSpeed": 1,
+  "name": "L3-4/Level 3-4",
   "symbol": "scene_41",
-  "x": 392,
-  "y": 2624,
+  "x": 424,
+  "y": 3520,
+  "width": 250,
+  "height": 18,
+  "backgroundId": "ec8ec0fe-9654-42cb-9915-7449ec3412c7",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "b03dbfa9-c85e-45bc-9837-2db142f66196"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
   "script": [
     {
       "command": "EVENT_GROUP",
@@ -580,5 +585,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "00ea6+0f2ee+"
 }

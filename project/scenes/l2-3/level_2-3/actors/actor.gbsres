@@ -4,9 +4,9 @@
   "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "63e6c034-2a19-4631-80c2-2731b19663de",
+  "spriteSheetId": "e45e3e88-d4d5-40de-b4ba-a6045283396d",
   "prefabId": "",
-  "direction": "left",
+  "direction": "right",
   "moveSpeed": 1,
   "animSpeed": 15,
   "paletteId": "",
@@ -611,6 +611,6 @@
     }
   ],
   "x": 252,
-  "y": 9,
+  "y": 10,
   "_index": 0
 }

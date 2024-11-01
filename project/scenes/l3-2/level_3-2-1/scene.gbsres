@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "99510e5e-5d96-4367-9da4-0a1873cfcc30",
+  "_index": 62,
+  "name": "L3-2/Level 3-2-1",
+  "backgroundId": "ec8ec0fe-9654-42cb-9915-7449ec3412c7",
+  "tilesetId": "",
+  "width": 250,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00ea6+0f2ee+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_63",
+  "x": 432,
+  "y": 2968,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

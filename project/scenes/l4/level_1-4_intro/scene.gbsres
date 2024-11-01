@@ -2,17 +2,20 @@
   "_resourceType": "scene",
   "id": "a8270c83-a071-4508-9303-c68093a6f3ab",
   "_index": 11,
+  "type": "TOPDOWN",
   "name": "L4/level 1-4 intro",
-  "backgroundId": "26c6ba9e-fe31-4aa8-aedb-54b629a9e3c6",
-  "tilesetId": "",
+  "symbol": "scene_12",
+  "x": 192,
+  "y": 928,
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "backgroundId": "26c6ba9e-fe31-4aa8-aedb-54b629a9e3c6",
+  "tilesetId": "",
   "paletteIds": [
     "default-bg-4",
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
     "default-bg-4"
   ],
   "spritePaletteIds": [
@@ -23,11 +26,7 @@
     "7a50aced-4929-4b78-b02e-a5ee40dd0278",
     "b03dbfa9-c85e-45bc-9837-2db142f66196"
   ],
-  "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_12",
-  "x": 192,
-  "y": 928,
   "script": [
     {
       "command": "EVENT_ACTOR_HIDE",
@@ -380,5 +379,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": ""
 }
