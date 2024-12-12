@@ -8,8 +8,8 @@
     },
     {
       "id": "1",
-      "name": "Player boost",
-      "symbol": "var_player_boost"
+      "name": "Playerboost",
+      "symbol": "var_playerboost"
     },
     {
       "id": "2",
@@ -144,7 +144,32 @@
     {
       "id": "28",
       "name": "fire_damage",
-      "symbol": "var_fire_damage"
+      "symbol": "var_fire_damage_0"
+    },
+    {
+      "id": "29",
+      "name": "wind_damage",
+      "symbol": "var_wind_damage"
+    },
+    {
+      "id": "30",
+      "name": "fire_damage2",
+      "symbol": "var_fire_damage2_0"
+    },
+    {
+      "id": "31",
+      "name": "Endless rnd",
+      "symbol": "var_endless_rnd"
+    },
+    {
+      "id": "32",
+      "name": "debug_Mode",
+      "symbol": "var_debug_mode"
+    },
+    {
+      "id": "33",
+      "name": "sune_damage",
+      "symbol": "var_sune_damage"
     },
     {
       "id": "4f8924a2-6f49-4c99-8471-c476f9b7a2bb__L0",
@@ -170,6 +195,21 @@
       "id": "7e5cbb0c-da62-4ff2-b7dd-3adc57813317__L0",
       "name": "Local 0",
       "symbol": "var_local_3"
+    },
+    {
+      "id": "a0d94fbd-fe74-406e-960f-2a7c21048494__L0",
+      "name": "Local 0",
+      "symbol": "var_local_5"
+    },
+    {
+      "id": "6b9e0be0-811f-4a6f-aa46-21d505db301b__L0",
+      "name": "Local 0",
+      "symbol": "var_local_6"
+    },
+    {
+      "id": "af186c61-3d20-4f91-a9b8-b5f6f2a30897__L0",
+      "name": "Local 0",
+      "symbol": "var_local_7"
     }
   ]
 }

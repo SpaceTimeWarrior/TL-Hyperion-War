@@ -1,0 +1,72 @@
+{
+  "_resourceType": "scene",
+  "id": "39782532-fc18-4365-b9ed-54ff91ef559e",
+  "_index": 49,
+  "name": "Endless mode launcher",
+  "backgroundId": "a4717a9a-203e-41a8-aa81-807a5e98ecd6",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "SHMUP",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_52",
+  "x": 3048,
+  "y": 136,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "0",
+              "value": {
+                "type": "number",
+                "value": 64
+              }
+            },
+            "id": "a16f9e14-e9ad-4f65-8d63-27b5778bdd7d"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "2",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "3e93da8a-52b1-4466-8afe-914163cb3e71"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "1",
+              "value": {
+                "type": "number",
+                "value": 16
+              }
+            },
+            "id": "ccb89c3f-65ce-4482-8519-f207f4c1ce78"
+          }
+        ]
+      },
+      "id": "0b12d2f5-4ca8-45e7-b4eb-3bb5a622a3a4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "8631eb58-818d-4e68-82a1-92f284a4edb9"
+      },
+      "id": "0f2eb5db-030a-4df0-a6c6-ec37bbd13e53"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

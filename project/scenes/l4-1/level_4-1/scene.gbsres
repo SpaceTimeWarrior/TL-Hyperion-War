@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "9b554fae-268e-4941-8e38-bc73397ccc4b",
-  "_index": 43,
+  "_index": 41,
   "name": "L4-1/Level 4-1",
   "backgroundId": "a76072f1-ad4f-4efe-8ea8-3a805a46a3c2",
   "tilesetId": "",
@@ -13,9 +13,16 @@
   "collisions": "0f100+002+0ffc+004+0ffb+00e7+0f2+008f5+0f2+0019+0ffc+002+0f3fa+",
   "autoFadeSpeed": 1,
   "symbol": "scene_44",
-  "x": 408,
-  "y": 3888,
+  "x": 440,
+  "y": 3880,
   "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "1bc08a14-11e4-4dcc-94c7-0e56838a16db"
+      },
+      "id": "5335cfe6-3924-4571-9800-ed698c54af63"
+    },
     {
       "command": "EVENT_GROUP",
       "args": {},
@@ -26,6 +33,97 @@
             "args": {
               "__collapse": false,
               "__label": "boot up script"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_OVERLAY_SHOW",
+                  "args": {
+                    "color": "black",
+                    "x": 0,
+                    "y": 16
+                  },
+                  "id": "4ba7e628-c114-4508-8aaa-47cc728d6fba"
+                },
+                {
+                  "command": "EVENT_GBVM_SCRIPT",
+                  "args": {
+                    "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 2, 0, 16"
+                  },
+                  "id": "2419c56b-4284-4198-b39f-fdf44f938bee"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "bc4ebbdd-314c-40fe-9dff-a19d9724d9ec",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "__collapse": false,
+                    "$variable[V3]$": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "886353f6-2c0a-435f-833b-95e3906e6d0c"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "520dafcf-5e16-411c-849a-d8095b920852"
+                  },
+                  "id": "1625b92d-c0e6-4ca3-8738-f18506246248"
+                },
+                {
+                  "command": "EVENT_SET_TIMER_SCRIPT",
+                  "args": {
+                    "timer": 4,
+                    "duration": 0.333,
+                    "frames": 30,
+                    "__scriptTabs": "end",
+                    "__collapse": false
+                  },
+                  "children": {
+                    "script": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "58efa1c8-c063-42c4-a038-914f02223bc5"
+                        },
+                        "id": "44ad720e-2885-484b-8768-2b569c567240"
+                      },
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "44b7e065-ecfd-4de0-8a4a-5b08251fdce6",
+                          "$variable[V0]$": {
+                            "type": "variable",
+                            "value": "T0"
+                          }
+                        },
+                        "id": "1f5a34e8-5f80-4c15-80bc-57bbada268d2"
+                      },
+                      {
+                        "command": "EVENT_THREAD_STOP",
+                        "args": {
+                          "variable": "T0"
+                        },
+                        "id": "135c3ee8-13d6-4300-aae2-210647418029"
+                      }
+                    ]
+                  },
+                  "id": "c6e4585e-2a76-40c4-beab-405852fd8142"
+                }
+              ]
+            },
+            "id": "da0fec6f-751b-406f-8aad-018a8ea5ceeb"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true,
+              "__label": "boot up script",
+              "__comment": true
             },
             "children": {
               "true": [

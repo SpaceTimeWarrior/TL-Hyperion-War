@@ -3,11 +3,11 @@
   "id": "af4f7f70-eaef-4286-80fc-cb9e297cb347",
   "_index": 27,
   "name": "L2-4/Level 2-4 intro",
-  "backgroundId": "94e33a24-0b54-4d44-9886-89987b318a09",
+  "backgroundId": "28d2d63f-ae1f-46ef-88ac-c6e358eb8d75",
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "type": "ADVENTURE",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -15,7 +15,62 @@
   "symbol": "scene_28",
   "x": 200,
   "y": 2008,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0c72819a-9836-42d5-b84c-b20033fa4cfd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "or",
+            "valueA": {
+              "type": "variable",
+              "value": "30"
+            },
+            "valueB": {
+              "type": "variable",
+              "value": "29"
+            }
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f8e2a172-c5ab-4479-babe-a00df2d59932",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__comment": false
+            },
+            "id": "b1e62e42-6ee4-438c-bf91-d3e66cd9e781"
+          }
+        ],
+        "false": []
+      },
+      "id": "03fb679e-7a45-4a85-92f0-19892dcaaff8"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": []

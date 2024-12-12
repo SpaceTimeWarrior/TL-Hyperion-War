@@ -160,9 +160,16 @@
                 "property": "xpos"
               },
               "y": {
-                "type": "property",
-                "target": "player",
-                "property": "ypos"
+                "type": "add",
+                "valueA": {
+                  "type": "property",
+                  "target": "player",
+                  "property": "ypos"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
               },
               "moveType": "vertical",
               "useCollisions": false

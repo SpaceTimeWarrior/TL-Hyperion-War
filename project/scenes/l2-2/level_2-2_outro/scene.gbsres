@@ -24,7 +24,8 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__label": "setup level score"
+        "__label": "setup level score",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -98,7 +99,8 @@
         "value14": 15,
         "__collapseCase15": false,
         "value15": 16,
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__collapse": false
       },
       "children": {
         "true0": [
@@ -149,14 +151,14 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "score grading"
                   },
                   "children": {
@@ -554,7 +556,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "end of chapter dialog"
                   },
                   "children": {
@@ -836,36 +838,9 @@
                         "children": {
                           "true": [
                             {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!since this demo \nonly has 7 levels",
-                                  "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!we are returning\nto title"
-                                ],
-                                "__section": "text",
-                                "avatarId": "",
-                                "minHeight": 4,
-                                "maxHeight": 7,
-                                "textX": 1,
-                                "textY": 1,
-                                "textHeight": 5,
-                                "position": "bottom",
-                                "clearPrevious": true,
-                                "showFrame": "true",
-                                "speedIn": -1,
-                                "speedOut": -1,
-                                "closeWhen": "text",
-                                "closeButton": "a",
-                                "closeDelayTime": 0.5,
-                                "closeDelayFrames": 30,
-                                "__comment": false
-                              },
-                              "id": "ec5e9f16-a10c-4269-b856-32666c92f811"
-                            },
-                            {
                               "command": "EVENT_SWITCH_SCENE",
                               "args": {
-                                "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
+                                "sceneId": "c3d50f94-a6b9-43d6-9570-8e9dc6335649",
                                 "x": {
                                   "type": "number",
                                   "value": 0
@@ -940,14 +915,14 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "score grading"
                   },
                   "children": {
@@ -1345,7 +1320,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "end of chapter dialog"
                   },
                   "children": {
@@ -1627,36 +1602,9 @@
                         "children": {
                           "true": [
                             {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!since this demo \nonly has 7 levels",
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!we are returning\nto title"
-                                ],
-                                "__section": "text",
-                                "avatarId": "",
-                                "minHeight": 4,
-                                "maxHeight": 7,
-                                "textX": 1,
-                                "textY": 1,
-                                "textHeight": 5,
-                                "position": "bottom",
-                                "clearPrevious": true,
-                                "showFrame": "true",
-                                "speedIn": -1,
-                                "speedOut": -1,
-                                "closeWhen": "text",
-                                "closeButton": "a",
-                                "closeDelayTime": 0.5,
-                                "closeDelayFrames": 30,
-                                "__comment": false
-                              },
-                              "id": "adb3a6a5-1fd7-4ede-8260-69e79581513e"
-                            },
-                            {
                               "command": "EVENT_SWITCH_SCENE",
                               "args": {
-                                "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
+                                "sceneId": "c3d50f94-a6b9-43d6-9570-8e9dc6335649",
                                 "x": {
                                   "type": "number",
                                   "value": 0
@@ -1750,7 +1698,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "score grading"
                   },
                   "children": {
@@ -2148,7 +2096,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "end of chapter dialog"
                   },
                   "children": {
@@ -2430,36 +2378,9 @@
                         "children": {
                           "true": [
                             {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!since this demo \nonly has 7 levels",
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!we are returning\nto title"
-                                ],
-                                "__section": "text",
-                                "avatarId": "",
-                                "minHeight": 4,
-                                "maxHeight": 7,
-                                "textX": 1,
-                                "textY": 1,
-                                "textHeight": 5,
-                                "position": "bottom",
-                                "clearPrevious": true,
-                                "showFrame": "true",
-                                "speedIn": -1,
-                                "speedOut": -1,
-                                "closeWhen": "text",
-                                "closeButton": "a",
-                                "closeDelayTime": 0.5,
-                                "closeDelayFrames": 30,
-                                "__comment": false
-                              },
-                              "id": "2f14ac94-b12c-4740-be5d-3a248fdf7506"
-                            },
-                            {
                               "command": "EVENT_SWITCH_SCENE",
                               "args": {
-                                "sceneId": "6ed3ac02-17cf-4536-b97d-890308fcad3b",
+                                "sceneId": "c3d50f94-a6b9-43d6-9570-8e9dc6335649",
                                 "x": {
                                   "type": "number",
                                   "value": 0

@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "e39505fb-f730-4385-b8aa-c531b4deaff4",
+  "name": "abomination boss ship",
+  "symbol": "tileset_abomination_boss_sh",
+  "width": 8,
+  "height": 6,
+  "imageWidth": 64,
+  "imageHeight": 48,
+  "filename": "abomination boss ship.png"
+}

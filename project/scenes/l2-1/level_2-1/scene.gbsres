@@ -9,7 +9,7 @@
   "y": 1280,
   "width": 255,
   "height": 18,
-  "backgroundId": "5382612f-59b9-4bee-ad51-d901281d96d4",
+  "backgroundId": "c91d4cbe-614d-4f84-84c6-438067578e77",
   "tilesetId": "",
   "paletteIds": [
     "",
@@ -27,13 +27,15 @@
   "script": [
     {
       "command": "EVENT_GROUP",
-      "args": {},
+      "args": {
+        "__collapse": false
+      },
       "children": {
         "true": [
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": false,
+              "__collapse": true,
               "__label": "boot up script"
             },
             "children": {
@@ -325,7 +327,7 @@
                                         }
                                       },
                                       "__collapseElse": true,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -497,7 +499,8 @@
               "value14": 15,
               "__collapseCase15": false,
               "value15": 16,
-              "__collapseElse": false
+              "__collapseElse": false,
+              "__collapse": true
             },
             "children": {
               "true0": [
@@ -2221,7 +2224,7 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": false,
+              "__collapse": true,
               "__label": "setup for level"
             },
             "children": {

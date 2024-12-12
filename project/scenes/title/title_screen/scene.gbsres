@@ -102,11 +102,31 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "L0",
+              "items": 4,
+              "option1": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!New Game",
+              "option2": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Load Game",
+              "option3": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!menu settings",
+              "option4": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!endless",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": false,
+              "__comment": true
+            },
+            "id": "e6e157db-8b70-43e5-9a88-c133aa4bb80e"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
               "items": 3,
               "option1": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!New Game",
               "option2": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Load Game",
               "option3": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!menu settings",
-              "option4": "",
+              "option4": "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!endless",
               "option5": "",
               "option6": "",
               "option7": "",
@@ -130,11 +150,31 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "L0",
+              "items": 4,
+              "option1": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!New Game",
+              "option2": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Load Game",
+              "option3": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!menu settings",
+              "option4": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!endless",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": false,
+              "__comment": true
+            },
+            "id": "128d93ff-9e3f-41ae-ac8d-2486b5a5b9fc"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
               "items": 3,
               "option1": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!New Game",
               "option2": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Load Game",
               "option3": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!menu settings",
-              "option4": "",
+              "option4": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!endless",
               "option5": "",
               "option6": "",
               "option7": "",
@@ -172,11 +212,31 @@
             "command": "EVENT_MENU",
             "args": {
               "variable": "L0",
+              "items": 4,
+              "option1": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!New Game",
+              "option2": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Load Game",
+              "option3": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!menu settings",
+              "option4": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!endless",
+              "option5": "",
+              "option6": "",
+              "option7": "",
+              "option8": "",
+              "cancelOnB": true,
+              "layout": "dialogue",
+              "cancelOnLastOption": false,
+              "__comment": true
+            },
+            "id": "eaf23842-3d3c-40fa-8ac2-8c53532bae53"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "L0",
               "items": 3,
               "option1": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!New Game",
               "option2": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Load Game",
               "option3": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!menu settings",
-              "option4": "",
+              "option4": "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!endless",
               "option5": "",
               "option6": "",
               "option7": "",
@@ -195,12 +255,12 @@
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "L0",
-        "choices": 3,
+        "choices": 4,
         "__collapseCase0": false,
         "value0": 1,
-        "__collapseCase1": false,
+        "__collapseCase1": true,
         "value1": 2,
-        "__collapseCase2": false,
+        "__collapseCase2": true,
         "value2": 3,
         "__collapseCase3": false,
         "value3": 4,
@@ -936,7 +996,25 @@
             "id": "d5563de8-1ea6-4635-8060-9c19f376f432"
           }
         ],
-        "true3": [],
+        "true3": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "39782532-fc18-4365-b9ed-54ff91ef559e",
+              "x": {
+                "type": "number",
+                "value": 12
+              },
+              "y": {
+                "type": "number",
+                "value": 10
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e7175166-e586-4e62-82c5-6c1922ff6618"
+          }
+        ],
         "true4": [],
         "true5": [],
         "true6": [],

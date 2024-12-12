@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a4717a9a-203e-41a8-aa81-807a5e98ecd6",
+  "name": "preparing ship",
+  "symbol": "bg_preparing_ship",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "preparing ship.png",
+  "tileColors": "",
+  "autoColor": false
+}

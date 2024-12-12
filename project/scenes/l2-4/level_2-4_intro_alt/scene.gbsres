@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "f8e2a172-c5ab-4479-babe-a00df2d59932",
+  "_index": 63,
+  "name": "L2-4/Level 2-4 intro alt",
+  "backgroundId": "28d2d63f-ae1f-46ef-88ac-c6e358eb8d75",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_68",
+  "x": 200,
+  "y": 2192,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

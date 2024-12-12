@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "80cbda0c-1c72-4cfe-b5e8-953ed56b230f",
+  "name": "leaving_luna2",
+  "symbol": "bg_leaving_luna2",
+  "width": 255,
+  "height": 18,
+  "imageWidth": 2040,
+  "imageHeight": 144,
+  "filename": "leaving_luna2.png",
+  "tileColors": "",
+  "autoColor": false
+}

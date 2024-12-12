@@ -11,27 +11,9 @@
   "height": 15,
   "script": [
     {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "11ac56d4-6319-4bef-b6d9-ebc38b9d0d1c"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
-      },
-      "id": "db059bdd-4ead-4d5b-989e-5eea0b80999f"
-    },
-    {
       "command": "EVENT_GROUP",
       "args": {
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -71,225 +53,1367 @@
       "id": "7f3e3d4d-1f42-4a97-ba7c-385cb0e7c021"
     },
     {
-      "command": "EVENT_PALETTE_SET_UI",
+      "command": "EVENT_SWITCH",
       "args": {
-        "palette": "default-bg-3"
+        "variable": "22",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
-      "id": "596620eb-9cfd-49fe-99aa-927ea65a6ae8"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 220,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "dddd7f25-2b1e-4f88-a53c-e320cf7fbf8b"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "????:impressive\nfor a little \nfurball. but you",
-          "scum can't \ndestroy my \nultimate ship"
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "16f85952-a842-44f1-9ac6-99c501da2dfe"
+            },
+            "id": "51c9d937-175f-4e42-afd2-e619d1bdcadf"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "hyperion war font",
+                    "__comment": true
+                  },
+                  "id": "15c5817a-e0b2-4611-883a-10dcc42c8bf5"
+                }
+              ]
+            },
+            "id": "02d69feb-5c40-49e3-9873-f883e2800dcf"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "11ac56d4-6319-4bef-b6d9-ebc38b9d0d1c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "db059bdd-4ead-4d5b-989e-5eea0b80999f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!???:this is \ninvasion force\nalpha unknown",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!fighters state \nyour business"
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "80cfa75e-d2ca-4eee-97d3-4acf2306be35"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "23ce25ad-be4d-4078-b2f9-c160964d5357"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "842c5e82-6efc-42a3-8554-adfe04724af2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Blair: I should \nbe the one \nasking that ",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!question we are\nin Eatherian\nspace. but",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!invasion force\ndoesn't sound \nvery friendly",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!who is your \nemployer you\nhave 1 minute to",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!respond or you\nwill be fired\nupon."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "08ac511d-8ec6-470a-9a6e-a82450b66f7b"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "9b924e06-ba6d-4a06-be90-8daa80f6ffa8"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "e75c520d-1512-48d1-be67-2e6c065ae682"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!???:you and what\narmy. you are a\nworthless",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!little furball.\nyou probably\ndon't even have",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!a governmental\nposition."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3ec97cf6-d0f1-42f7-817f-d0cb50a191f7"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "31bf956f-8892-417d-acad-122b7dba9b26"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "93a6b420-601b-40f6-8ef5-46bfbcb515d0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!Blair: I am \nQueen blair \nfoxend. I just",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!put a alarm they\nwill be here \nsoon. this is",
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!your final \nwarning don't\ntry me."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "d09dcb73-aed2-43a8-991f-75d541ca9649"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "838d08cb-acb4-40a0-8fcc-57e4afafb4cd"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "dfc99620-4d42-4122-9aa6-40991b86380d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!???:F$%^ you \nB^%*"
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "f049090d-993f-4da9-b9f2-abc4a516f649"
+                }
+              ]
+            },
+            "id": "7695b3f5-08c0-47ec-8a9e-0c1178280413"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {},
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "29"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                        },
+                        "id": "6e97dc5b-92ef-48ba-9b64-b987f838e97f"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!wind: hacking \ninto the defense\ngrid",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!I targeted the \nenemy they will ",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!move half as \nfast"
+                          ],
+                          "__section": "behavior",
+                          "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 2,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "2939eae0-7eb0-43ab-9695-691fc3778375"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "9da5cc96-296e-445b-adc9-d2dd50b80064",
+                          "speed": 0.5
+                        },
+                        "id": "cd163a97-1d93-491d-8d47-a731b44b6a38"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "7f04acdd-dc2f-4745-ae60-1d7f7f439573"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "30"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "d8ff2d0a-0648-438e-a6b8-a6fa9e3289f6"
+                        },
+                        "id": "b466fe8a-0038-40ee-beac-396b727dc46e"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!fire: Although \nancient I was\nable to hack",
+                            "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!into the enemy\nshields"
+                          ],
+                          "__section": "behavior",
+                          "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 2,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "78ec358f-3eb5-4686-824c-d27754e27133"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "6",
+                          "value": {
+                            "type": "add",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "6"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 50
+                            }
+                          }
+                        },
+                        "id": "df1cb4ea-740f-4f16-b52d-93517838408e"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "8",
+                          "value": {
+                            "type": "number",
+                            "value": 10
+                          }
+                        },
+                        "id": "5cf88364-9501-41c5-846c-cf14f77107d2"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "397ba6c5-4faf-4983-9a9a-e535d09e4611"
+                }
+              ]
+            },
+            "id": "9a733ad2-258c-4d4b-b58c-e53f0f6dbf3d"
+          }
         ],
-        "__section": "layout",
-        "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 1,
-        "closeDelayFrames": 30
-      },
-      "id": "00e6c0b4-02a9-4245-a072-bfa7d3227c96"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
-      },
-      "id": "30b60670-f2d1-4442-b8f6-4a025795beb0"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "f42d6a4b-231d-475d-bcb1-fad872c44aff"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "blair: you mean\nscrap heap that \nwas crudely",
-          "welded together.\nIf you built\nthat you might ",
-          "need to practice\na bit more as\nthose welds look",
-          "very poor. and\nit looks like \nyou took random",
-          "ships and welded\nthem together"
+        "true1": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "bba68b1b-ce94-4041-8f8d-cd283e563cf6"
+            },
+            "id": "70a9cb96-6f88-4a8f-9d43-fe230dd627fb"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "486695b3-5afe-4ed7-b838-2fbfe136a575"
+                }
+              ]
+            },
+            "id": "80105b46-a8dc-47bf-902c-daa4581ab6b7"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "4ffa568c-275e-4804-82b0-a09a480dfdc7"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "3932f21e-ddd9-4287-9219-8b9f685c1eb2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:this is \ninvasion force\nalpha unknown",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!fighters state \nyour business"
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "122745fa-0980-4d20-b2b4-8dfa110ec6d6"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "857bc180-7c02-4f6d-b313-d21f3bed6de9"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "24efd914-360c-4835-bf2b-6debd5b4b776"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: I should \nbe the one \nasking that ",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!question we are\nin Eatherian\nspace. but",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!invasion force\ndoesn't sound \nvery friendly",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!who is your \nemployer you\nhave 1 minute to",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!respond or you\nwill be fired\nupon."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "ab896bbe-5035-49c8-a9fe-dba9fb5e4057"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "8ac6ce57-6aed-4570-b68a-f3d480b1cc23"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "d3d4ebd4-93d0-4ade-beed-89eed2cbeb97"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:you and what\narmy. you are a\nworthless",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!little furball.\nyou probably\ndon't even have",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!a governmental\nposition."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "d3b8d60a-f8bf-4913-8588-852cb5199297"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "1d5124a2-edb8-4960-b9a6-0f098d60bba0"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "82e1afe3-0dc3-4077-a667-978429660ae9"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: I am \nQueen blair \nfoxend. I just",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!put a alarm they\nwill be here \nsoon. this is",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!your final \nwarning don't\ntry me."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "a4780885-6937-4d58-8c16-7a5211216889"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "0287099a-ef35-49b4-9a94-242e651e6634"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "63bf3e0d-c615-47eb-93a0-1495f03f05cb"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:F$%^ you \nB^%*"
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "62522779-ad66-4055-ac4f-eccfcf0d5a73"
+                }
+              ]
+            },
+            "id": "386c5a6d-df3d-4782-aa1f-a0262357d563"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "29"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                        },
+                        "id": "0ef863c3-4148-404f-af2a-5df1f889f3c8"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!wind: hacking \ninto the defense\ngrid",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!I targeted the \nenemy they will ",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!move half as \nfast"
+                          ],
+                          "__section": "behavior",
+                          "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 2,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "9b4c19a7-7b69-47e4-925e-e75e198b9546"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "9da5cc96-296e-445b-adc9-d2dd50b80064",
+                          "speed": 0.5
+                        },
+                        "id": "edd8147b-ac27-4ca7-89a0-15ee08a8b81b"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "fa24a6da-4258-457d-9322-3d88095e84aa"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "30"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "d8ff2d0a-0648-438e-a6b8-a6fa9e3289f6"
+                        },
+                        "id": "1749f6ff-c024-4d6e-a334-8daac63ffd6a"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!fire: Although \nancient I was\nable to hack",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!into the enemy\nshields"
+                          ],
+                          "__section": "behavior",
+                          "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 2,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "1f96f7da-da63-43f7-ae96-55ba9cbe3a9c"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "6",
+                          "value": {
+                            "type": "add",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "6"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 50
+                            }
+                          }
+                        },
+                        "id": "07f4e751-33e1-4497-8c2d-dc7313aa6700"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "8",
+                          "value": {
+                            "type": "number",
+                            "value": 10
+                          }
+                        },
+                        "id": "8518db3f-d2ba-4e67-8ad7-022258e7342a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "886c8bd5-3d15-4e89-825c-e362dc1bb2e9"
+                }
+              ]
+            },
+            "id": "f905a551-0b45-4201-bd4d-1e88d876a598"
+          }
         ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "top",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.8,
-        "closeDelayFrames": 30
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_SET_DIALOGUE_FRAME",
+            "args": {
+              "tilesetId": "54fcd56e-556b-46af-86b4-5d8e192627a7"
+            },
+            "id": "233ec6b7-f7a7-4046-8dc4-8c94ff9d2d75"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "",
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true,
+                    "__label": "TL Basic font",
+                    "__comment": true
+                  },
+                  "id": "e284433d-2c17-4e69-9cee-5b784059f6e0"
+                }
+              ]
+            },
+            "id": "94ba914c-f023-4a96-a09e-edbb2fa537ee"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "cdd38a9e-01ce-4ce1-9255-38d511e914ab"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "6e8ced3e-6b75-48c3-9fac-c907c9505f7c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:this is \ninvasion force\nalpha unknown",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!fighters state \nyour business"
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "e3848826-d4aa-43e5-ae66-885ade0f1806"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "628fb493-8d04-41af-a109-7b86b159c2ff"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "eb6c57f2-4ba9-4981-b28a-1ba8f5632138"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: I should \nbe the one \nasking that ",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!question we are\nin Eatherian\nspace. but",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!invasion force\ndoesn't sound \nvery friendly",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!who is your \nemployer you\nhave 1 minute to",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!respond or you\nwill be fired\nupon."
+                    ],
+                    "__section": "layout",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "a96b75bb-1898-4cbb-943a-0fee45d8784f"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "d10bcfd6-78b7-486a-9ca2-5ecd3af96aab"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "249bd2fe-128e-45ad-b884-4ac61643ef13"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:you and what\narmy. you are a\nworthless",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!little furball.\nyou probably\ndon't even have",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!a governmental\nposition."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "fee3bc60-977f-45bb-b2ef-2b986492d112"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                  },
+                  "id": "1237c159-cecb-4d61-b329-1ba80632e97f"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 520,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "a7eedcbf-aacb-435d-95f8-5d054a74bfcb"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Blair: I am \nQueen blair \nfoxend. I just",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!put a alarm they\nwill be here \nsoon. this is",
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!your final \nwarning don't\ntry me."
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "8aca6db6-1b83-4a71-a5ac-f2aa0f11833d"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "default-bg-3"
+                  },
+                  "id": "6eb64328-efa4-4f9f-9b6e-4e802363e636"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 420,
+                    "duration": 0.03,
+                    "effect": 0
+                  },
+                  "id": "3b5bdac3-2f03-4fad-8684-e28a5f5f70b0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:F$%^ you \nB^%*"
+                    ],
+                    "__section": "behavior",
+                    "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "text",
+                    "closeButton": "a",
+                    "closeDelayTime": 2,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "e44cb8d1-603a-4617-8440-6c66d09a6eed"
+                }
+              ]
+            },
+            "id": "dbe693bc-b831-4f07-9a74-a6fa84979692"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "29"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
+                        },
+                        "id": "36675684-4ed2-4aff-a51e-a0a381d6e91c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!wind: hacking \ninto the defense\ngrid",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!I targeted the \nenemy they will ",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!move half as \nfast"
+                          ],
+                          "__section": "behavior",
+                          "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 2,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "551a9cf1-1767-4f8d-b436-2b27c3456461"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                        "args": {
+                          "actorId": "9da5cc96-296e-445b-adc9-d2dd50b80064",
+                          "speed": 0.5
+                        },
+                        "id": "3fef18a3-bdf6-4e05-8241-967c6e12ea12"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "829b0bce-ddb5-43a2-9e9f-b648c925b0c8"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "30"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "d8ff2d0a-0648-438e-a6b8-a6fa9e3289f6"
+                        },
+                        "id": "ebfedf66-1d4f-4ccf-a678-55798037a50d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!fire: Although \nancient I was\nable to hack",
+                            "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!into the enemy\nshields"
+                          ],
+                          "__section": "behavior",
+                          "avatarId": "89859e12-1480-4105-af3a-91eae29e6482",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "text",
+                          "closeButton": "a",
+                          "closeDelayTime": 2,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "a7c5cda8-71f3-4a70-bdda-41423f7f3a3f"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "6",
+                          "value": {
+                            "type": "add",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "6"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 50
+                            }
+                          }
+                        },
+                        "id": "db1d466e-5df1-4e56-a6ca-c1a9be0eb207"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "8",
+                          "value": {
+                            "type": "number",
+                            "value": 10
+                          }
+                        },
+                        "id": "df3c025a-7422-4a71-9451-e52e157772ff"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "a63b88c3-21d5-497e-8462-b85bfc0f0085"
+                }
+              ]
+            },
+            "id": "9477dfc8-aa26-4dfa-9793-fa81092fb7bb"
+          }
+        ]
       },
-      "id": "c1e33261-2e39-4ab0-8492-ae1187298006"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-bg-3"
-      },
-      "id": "8069f567-aace-4b46-a5df-a7a578cfa232"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 220,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "2ae6b306-9bcf-47dd-a1d7-4f687dd0099e"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "???: that isn't\ntrue I was told\nit looks awesome"
-        ],
-        "__section": "text",
-        "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.8,
-        "closeDelayFrames": 30
-      },
-      "id": "75cf6a74-7adf-4dfb-b148-76dec863b2d1"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "07b2a5a0-3272-4605-8fa3-ba1369859849"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "da9b688a-cb2c-41c1-8426-7ce7e65e3418"
-      },
-      "id": "1199105a-e1e0-4be2-916c-0a48629da506"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "blair:see for \nyourself I will\nsend you a image"
-        ],
-        "__section": "text",
-        "avatarId": "d7b8add9-5a07-4040-996b-29d9958432a7",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "text",
-        "closeButton": "a",
-        "closeDelayTime": 0.8,
-        "closeDelayFrames": 30
-      },
-      "id": "0e1e9ce1-8248-4a61-929b-04373d1cfef5"
-    },
-    {
-      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
-      "args": {
-        "type": "tone",
-        "pitch": 4,
-        "frequency": 520,
-        "duration": 0.03,
-        "effect": 0
-      },
-      "id": "73f62298-c89c-46be-9cef-f7a6df21ee72"
-    },
-    {
-      "command": "EVENT_PALETTE_SET_UI",
-      "args": {
-        "palette": "default-bg-3"
-      },
-      "id": "30891e50-2f91-4a1c-8026-0c8b3a212aa1"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "???:oh my...you\nare right well ",
-          "anyways lets\nfight"
-        ],
-        "__section": "text",
-        "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "fbe1bcef-b736-41d7-8a1f-92e25694caca"
+      "id": "b60cb16f-81fc-4b81-a3c2-bfeb5570ca16"
     },
     {
       "command": "EVENT_GROUP",
@@ -306,23 +1430,40 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
+                {
+                  "command": "EVENT_PREP_MENU",
+                  "args": {
+                    "xnoverlay": 0,
+                    "ynoverlay": 16,
+                    "color": "black",
+                    "xoverlay": 0,
+                    "yoverlay": 0,
+                    "overlayw": 20,
+                    "overlayh": 2,
+                    "xsource": 0,
+                    "ysource": 16
+                  },
+                  "id": "13c48bd7-0a0f-4883-b666-afce70698eb2"
+                },
                 {
                   "command": "EVENT_OVERLAY_SHOW",
                   "args": {
                     "color": "black",
                     "x": 0,
-                    "y": 16
+                    "y": 16,
+                    "__comment": true
                   },
                   "id": "a1f27e74-9668-4369-918b-a2387314eb6f"
                 },
                 {
                   "command": "EVENT_GBVM_SCRIPT",
                   "args": {
-                    "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 2, 0, 16"
+                    "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 2, 0, 16",
+                    "__comment": true
                   },
                   "id": "7b906ad8-ee00-4e27-913f-fd03476a1028"
                 },
@@ -430,9 +1571,9 @@
             "args": {
               "variable": "16",
               "choices": 2,
-              "__collapseCase0": true,
+              "__collapseCase0": false,
               "value0": 0,
-              "__collapseCase1": true,
+              "__collapseCase1": false,
               "value1": 1,
               "__collapseCase2": false,
               "value2": 3,
@@ -462,7 +1603,7 @@
               "value14": 15,
               "__collapseCase15": false,
               "value15": 16,
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true0": [

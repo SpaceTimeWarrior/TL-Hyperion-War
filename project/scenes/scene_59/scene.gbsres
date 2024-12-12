@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "b13b078e-a91a-4f94-801c-b6e66e44576e",
-  "_index": 58,
+  "_index": 56,
   "name": "Scene 59",
   "backgroundId": "a2af11e9-e36d-4e17-b4ee-4dd2233b7aa3",
   "tilesetId": "",
@@ -21,7 +21,7 @@
       "args": {
         "variable": "22",
         "choices": 2,
-        "__collapseCase0": true,
+        "__collapseCase0": false,
         "value0": 0,
         "__collapseCase1": true,
         "value1": 1,

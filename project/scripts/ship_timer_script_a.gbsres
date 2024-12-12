@@ -1,0 +1,134 @@
+{
+  "_resourceType": "script",
+  "id": "58efa1c8-c063-42c4-a038-914f02223bc5",
+  "name": "ship timer script A",
+  "description": "sets up the temp counters",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_6",
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "13"
+      },
+      "id": "48f8184d-b0da-4f1a-89f2-13458b50a77e"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "14"
+      },
+      "id": "c3e313da-a824-43df-bf47-036f8086a723"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "15"
+      },
+      "id": "4e6a3503-93a7-4ff3-ab6c-f69bc6f4f654"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "13"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 30
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "13",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "c6293898-c1fc-4c23-a405-5bfe79be8834"
+          }
+        ],
+        "false": []
+      },
+      "id": "340f0724-d850-4267-90b4-0223eb54b829"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 30
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "14",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "d08acd9f-0aac-434c-88e2-62449fe3e8bb"
+          }
+        ],
+        "false": []
+      },
+      "id": "c6eaeded-36e7-4545-9aac-b7688afa630c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "15"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 30
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "15",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "b64f802f-a690-48eb-a525-cf0ada59245b"
+          }
+        ],
+        "false": []
+      },
+      "id": "1d1844e6-77d4-4a68-af7b-cf2485eb0e19"
+    }
+  ]
+}

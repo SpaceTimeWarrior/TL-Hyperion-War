@@ -108,7 +108,8 @@
                 {
                   "command": "EVENT_IF_COLOR_SUPPORTED",
                   "args": {
-                    "__collapseElse": false
+                    "__collapseElse": false,
+                    "__collapse": true
                   },
                   "children": {
                     "true": [

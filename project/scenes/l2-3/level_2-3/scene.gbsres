@@ -16,13 +16,14 @@
     "",
     "",
     "",
-    "default-bg-5"
+    "default-bg-4"
   ],
   "spritePaletteIds": [
     "default-ui",
     "9e0ce806-cd5d-4f8c-89a0-bbab5ca8e910",
-    "1b759232-0f57-4300-8203-91f24e570817",
-    "e2b56506-3979-48aa-800d-0d75ea84cf75"
+    "d8ff2d0a-0648-438e-a6b8-a6fa9e3289f6",
+    "e2b56506-3979-48aa-800d-0d75ea84cf75",
+    "1b759232-0f57-4300-8203-91f24e570817"
   ],
   "autoFadeSpeed": 1,
   "script": [
@@ -34,7 +35,7 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": true,
+              "__collapse": false,
               "__label": "boot up script"
             },
             "children": {
@@ -326,7 +327,7 @@
                                         }
                                       },
                                       "__collapseElse": true,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -335,12 +336,12 @@
                                           "args": {
                                             "variable": "1"
                                           },
-                                          "id": "a9cff3c6-365d-4a6a-9a9a-d84092f10c48"
+                                          "id": "22380c5b-9c17-444f-9988-904d172fbbf1"
                                         }
                                       ],
                                       "false": []
                                     },
-                                    "id": "9461fed7-d141-4b27-bb65-bb868a32ff4e"
+                                    "id": "83ccbc4e-51e0-4cfa-8138-79915a51912a"
                                   },
                                   {
                                     "command": "EVENT_IF",
@@ -357,7 +358,7 @@
                                         }
                                       },
                                       "__collapseElse": false,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -370,65 +371,23 @@
                                               "value": 0
                                             }
                                           },
-                                          "id": "7c6c8b6f-e96c-4bea-8973-6677d3fa8a37"
+                                          "id": "401222c1-d705-4a49-8d81-fa9830f8b137"
                                         },
                                         {
                                           "command": "EVENT_ENGINE_FIELD_SET",
                                           "args": {
                                             "engineFieldKey": "shooter_scroll_speed"
                                           },
-                                          "id": "cfd1a3a5-cf14-4920-8715-fb6ca5f57baa"
+                                          "id": "1505f57f-060c-4d3a-841f-4f0f6d0d93e4"
                                         }
                                       ],
                                       "false": [
                                         {
-                                          "command": "EVENT_IF_INPUT",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "input": [
-                                              "b"
-                                            ],
-                                            "__collapseElse": false,
-                                            "__collapse": true
+                                            "customEventId": "01eace55-7462-4f91-ad27-0d5c14d74ffe"
                                           },
-                                          "children": {
-                                            "true": [
-                                              {
-                                                "command": "EVENT_ENGINE_FIELD_SET",
-                                                "args": {
-                                                  "engineFieldKey": "shooter_scroll_speed",
-                                                  "value": {
-                                                    "type": "number",
-                                                    "value": 50
-                                                  }
-                                                },
-                                                "id": "224beefc-64fa-437e-852a-fc19adee74f0"
-                                              },
-                                              {
-                                                "command": "EVENT_DEC_VALUE",
-                                                "args": {
-                                                  "variable": "1"
-                                                },
-                                                "id": "531566eb-62c0-4995-bb28-e9258f4b2c4a"
-                                              },
-                                              {
-                                                "command": "EVENT_DEC_VALUE",
-                                                "args": {
-                                                  "variable": "1"
-                                                },
-                                                "id": "3676973b-d90f-43f7-912c-7e3994e6e3f2"
-                                              }
-                                            ],
-                                            "false": [
-                                              {
-                                                "command": "EVENT_ENGINE_FIELD_SET",
-                                                "args": {
-                                                  "engineFieldKey": "shooter_scroll_speed"
-                                                },
-                                                "id": "66440258-58a6-4656-a5a8-bb3cfe4c6556"
-                                              }
-                                            ]
-                                          },
-                                          "id": "a3c85fec-108d-4e94-9e88-b83c4d46f0d4"
+                                          "id": "5d36b66f-99ef-4fa4-b85d-9778c52e9bba"
                                         },
                                         {
                                           "command": "EVENT_IF",
@@ -445,7 +404,7 @@
                                               }
                                             },
                                             "__collapseElse": false,
-                                            "__collapse": true
+                                            "__collapse": false
                                           },
                                           "children": {
                                             "true": [],
@@ -455,19 +414,19 @@
                                                 "args": {
                                                   "engineFieldKey": "shooter_scroll_speed"
                                                 },
-                                                "id": "e72b5df5-bbdc-4781-a7ca-cdfc2119de6b"
+                                                "id": "1c634c6b-2300-4e2e-861a-d3ae35e12661"
                                               }
                                             ]
                                           },
-                                          "id": "b2ce7949-38d6-4ea4-bd89-9ce6220b1748"
+                                          "id": "11be3ad0-27ef-43a3-b01e-8dd9b8fca8fb"
                                         }
                                       ]
                                     },
-                                    "id": "935de4bb-3c40-4674-8fcb-c10b98294657"
+                                    "id": "ab34d0f2-7164-4462-82b3-41b617bb0354"
                                   }
                                 ]
                               },
-                              "id": "564f73bf-c6aa-47cf-b338-e2896c191ec9"
+                              "id": "09d78081-855f-4e29-a81b-b1a27445e5b4"
                             },
                             {
                               "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -517,7 +476,7 @@
           {
             "command": "EVENT_GROUP",
             "args": {
-              "__collapse": true,
+              "__collapse": false,
               "__label": "setup for level"
             },
             "children": {
@@ -590,6 +549,14 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a9cb8f39-a699-4e1e-aa19-eb78c2842f4e"
+      },
+      "id": "28ea508d-5e68-49f3-8fa1-3bec56fd96e2"
+    }
+  ],
   "collisions": "00ef1+0f2fd+"
 }

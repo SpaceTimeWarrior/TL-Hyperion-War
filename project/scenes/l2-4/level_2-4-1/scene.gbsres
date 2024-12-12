@@ -1,14 +1,16 @@
 {
   "_resourceType": "scene",
   "id": "43fb981b-a43e-4af5-b418-2c81944418fc",
-  "_index": 64,
+  "_index": 60,
   "name": "L2-4/Level 2-4-1",
-  "backgroundId": "5382612f-59b9-4bee-ad51-d901281d96d4",
+  "backgroundId": "c91d4cbe-614d-4f84-84c6-438067578e77",
   "tilesetId": "",
   "width": 255,
   "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [],
+  "paletteIds": [
+    "default-sprite"
+  ],
   "spritePaletteIds": [],
   "collisions": "00ef1+0f2fd+",
   "autoFadeSpeed": 1,
@@ -18,5 +20,13 @@
   "script": [],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a9cb8f39-a699-4e1e-aa19-eb78c2842f4e"
+      },
+      "id": "1ceab428-22ed-4d91-b759-87b370802d67"
+    }
+  ]
 }

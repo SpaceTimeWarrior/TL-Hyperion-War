@@ -27,6 +27,17 @@
       "id": "ce4efe8e-240d-4b3b-b55c-e39ab93840e6"
     },
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "32",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "81476bcf-7d3d-4a45-bb22-da4136527858"
+    },
+    {
       "command": "EVENT_IF_SAVED_DATA",
       "args": {
         "saveSlot": 1,

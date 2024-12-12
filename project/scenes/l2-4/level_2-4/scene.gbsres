@@ -5,11 +5,11 @@
   "type": "SHMUP",
   "name": "L2-4/Level 2-4",
   "symbol": "scene_29",
-  "x": 432,
-  "y": 2184,
+  "x": 400,
+  "y": 2192,
   "width": 255,
   "height": 18,
-  "backgroundId": "5382612f-59b9-4bee-ad51-d901281d96d4",
+  "backgroundId": "80cbda0c-1c72-4cfe-b5e8-953ed56b230f",
   "tilesetId": "",
   "paletteIds": [
     "",
@@ -506,7 +506,7 @@
             "command": "EVENT_GROUP",
             "args": {
               "__label": "initial dialog",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": []
@@ -589,6 +589,14 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "a9cb8f39-a699-4e1e-aa19-eb78c2842f4e"
+      },
+      "id": "b1f6f948-4c6c-4541-a0a1-7299b362e257"
+    }
+  ],
   "collisions": "00ef1+0f2fd+"
 }

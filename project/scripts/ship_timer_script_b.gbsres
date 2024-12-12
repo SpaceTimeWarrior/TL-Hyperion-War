@@ -1,0 +1,252 @@
+{
+  "_resourceType": "script",
+  "id": "44b7e065-ecfd-4de0-8a4a-5b08251fdce6",
+  "name": "ship timer script B",
+  "description": "this is the threaded portion",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_7",
+  "script": [
+    {
+      "command": "EVENT_THREAD_START",
+      "args": {
+        "variable": "V0",
+        "__scriptTabs": "true"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "5"
+            },
+            "id": "8e5a7549-9b47-4e14-a06f-2cc8b2a844cf"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "5"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "2"
+                  },
+                  "id": "4a9a334f-1afc-4633-b243-7c196d7abdff"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "5",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "826efb3b-1085-4181-862c-653768c0be25"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "2"
+                      },
+                      "valueB": {
+                        "type": "variable",
+                        "value": "4"
+                      }
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "2",
+                          "value": {
+                            "type": "variable",
+                            "value": "4"
+                          }
+                        },
+                        "id": "7ca42eed-8ef1-4062-ac51-86b830919d0a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "a3127d3f-0d20-4245-bbf9-0dac120e2539"
+                }
+              ],
+              "false": []
+            },
+            "id": "dcfca137-3622-4da9-a6ea-e99a338e1acd"
+          },
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true,
+              "__label": "boost button"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "1"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 16
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "1"
+                        },
+                        "id": "e6cb4392-2a17-4b74-94f2-1764a44905a2"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "ea2d03e2-ad27-463f-8d29-0d0452846237"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "1"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "1",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "abb24977-d225-4351-a1ec-25e6fa69ef97"
+                      },
+                      {
+                        "command": "EVENT_ENGINE_FIELD_SET",
+                        "args": {
+                          "engineFieldKey": "shooter_scroll_speed"
+                        },
+                        "id": "851c19dd-9feb-496f-b658-fc65a527e9c4"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "01eace55-7462-4f91-ad27-0d5c14d74ffe"
+                        },
+                        "id": "fac26e88-e6e9-4424-bdef-2c00fa608353"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gte",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "1"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": false,
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [],
+                          "false": [
+                            {
+                              "command": "EVENT_ENGINE_FIELD_SET",
+                              "args": {
+                                "engineFieldKey": "shooter_scroll_speed"
+                              },
+                              "id": "ead00218-6872-4509-9ba2-3c201ae67e63"
+                            }
+                          ]
+                        },
+                        "id": "5c436d52-44f6-428d-b8bd-2a14c1ba7b03"
+                      }
+                    ]
+                  },
+                  "id": "6ef4cbc1-35ca-4dfd-bf02-c7e87d9cfd15"
+                }
+              ]
+            },
+            "id": "75640505-26d8-471e-a37d-410c7167faf6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "bc4ebbdd-314c-40fe-9dff-a19d9724d9ec",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 16
+              },
+              "__collapse": false,
+              "$variable[V3]$": {
+                "type": "false"
+              }
+            },
+            "id": "8e979e9e-a50d-4bca-b2cd-78269a4ea1a2"
+          }
+        ]
+      },
+      "id": "b80de2a2-443b-40a5-9476-f1390a009ffb"
+    }
+  ]
+}

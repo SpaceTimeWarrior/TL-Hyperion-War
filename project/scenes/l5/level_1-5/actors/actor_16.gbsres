@@ -429,7 +429,7 @@
               "value14": 15,
               "__collapseCase15": false,
               "value15": 16,
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true0": [
@@ -476,7 +476,7 @@
                       {
                         "command": "EVENT_GROUP",
                         "args": {
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -520,7 +520,8 @@
                                   "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!of asked if you\njoin my team \nsadly that is ",
                                   "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!how things are \nso a word of \nadvice be ",
                                   "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!careful with\nyour human \nfriends your",
-                                  "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!trust will be\nyour downfall"
+                                  "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!trust will be\nyour downfall.\nshould our paths",
+                                  "meet again my\nname is bias\nflareglobe"
                                 ],
                                 "__section": "text",
                                 "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
@@ -636,7 +637,8 @@
                                   "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!of asked if you\njoin my team \nsadly that is ",
                                   "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!how things are \nso a word of \nadvice be ",
                                   "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!careful with\nyour human \nfriends your",
-                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!trust will be\nyour downfall"
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!trust will be\nyour downfall.\nshould our paths",
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!meet again my\nname is bias\nflareglobe"
                                 ],
                                 "__section": "text",
                                 "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
@@ -720,6 +722,79 @@
                           "__comment": true
                         },
                         "id": "cddac056-221e-4309-a114-86a2f510569d"
+                      },
+                      {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!Congratulations\nyou beat the boss"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "fd92ba41-8966-4f9e-b459-c0903e44fe05"
+                            },
+                            {
+                              "command": "EVENT_TIMER_DISABLE",
+                              "args": {
+                                "timer": 2
+                              },
+                              "id": "0a0d95b7-e548-4ef3-9c96-b9d1dbb64cba"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!???:you win... \nif you weren't a\nmonster I would",
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!of asked if you\njoin my team \nsadly that is ",
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!how things are \nso a word of \nadvice be ",
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!careful with\nyour human \nfriends your",
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!trust will be\nyour downfall.\nshould our paths",
+                                  "!F:901db471-5b71-46af-82b7-f1fb7334f7a2!meet again my\nname is bias\nflareglobe"
+                                ],
+                                "__section": "text",
+                                "avatarId": "75c33567-43fa-437a-94a8-fc62b4a6700f",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "text",
+                                "closeButton": "a",
+                                "closeDelayTime": 1,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "d51c6e6c-2b5b-4516-8dd7-4fa4b20d91dc"
+                            }
+                          ]
+                        },
+                        "id": "b6735a24-a450-4e07-a0db-8ecd424e5004"
                       }
                     ]
                   },
